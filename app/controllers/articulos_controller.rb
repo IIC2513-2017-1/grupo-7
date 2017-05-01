@@ -24,16 +24,12 @@ class ArticulosController < ApplicationController
   # POST /articulos
   # POST /articulos.json
   def create
-    @articulo = Articulo.new(articulo_params)
-
-    respond_to do |format|
-      if @articulo.save
-        format.html { redirect_to @articulo, notice: 'Articulo was successfully created.' }
-        format.json { render :show, status: :created, location: @articulo }
-      else
-        format.html { render :new }
-        format.json { render json: @articulo.errors, status: :unprocessable_entity }
-      end
+    @micropost = current_user.microposts.build(micropost_params)
+    if @micropost.save
+      flash[:success] = "Micropost created!"
+      redirect_to root_url
+    else
+      render 'static_pages/home'
     end
   end
 

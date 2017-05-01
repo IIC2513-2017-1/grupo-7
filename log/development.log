@@ -3069,3 +3069,1633 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 256ms (Views: 240.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:17:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 331ms (Views: 311.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:17:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 403ms (Views: 379.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:19:47 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 327ms (Views: 301.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:19:50 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 282ms (Views: 265.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:21:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 475ms (Views: 450.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:21:50 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 331ms (Views: 311.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:22:18 +0000
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:22:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 622ms (Views: 590.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 672ms (Views: 638.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:22:20 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 294ms (Views: 275.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2017-04-30 23:22:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (3.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.9ms)
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:23:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 384ms (Views: 360.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/root_path" for 172.19.0.1 at 2017-04-30 23:23:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/root_path"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (4.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.3ms)
+Started GET "/root_path" for 172.19.0.1 at 2017-04-30 23:23:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/root_path"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (3.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.3ms)
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:24:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.2ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:02 +0000
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered layouts/_shim.html.erb (0.6ms)
+Processing by StaticPagesController#home as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 561ms (Views: 539.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 621ms (Views: 587.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 690ms (Views: 649.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 255ms (Views: 236.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 377ms (Views: 354.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 1058ms (Views: 1033.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 1033ms (Views: 1005.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-04-30 23:24:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 947ms (Views: 888.5ms | ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (34.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 517ms (Views: 432.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 348ms (Views: 320.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 350ms (Views: 327.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-04-30 23:24:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 426ms (Views: 398.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:24:15 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 377ms (Views: 351.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:24:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 362ms (Views: 341.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:25:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 550ms (Views: 534.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:26:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (1.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 611ms (Views: 585.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:27:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 594ms (Views: 571.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:27:47 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 376ms (Views: 345.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:28:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 372ms (Views: 344.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:28:29 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 496ms (Views: 479.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:29:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 514ms (Views: 491.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:29:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 589ms (Views: 565.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:29:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 451ms (Views: 436.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:30:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 446ms (Views: 429.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:30:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 425ms (Views: 404.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:30:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 545ms (Views: 518.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:31:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 567ms (Views: 543.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:31:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 561ms (Views: 540.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:31:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 522ms (Views: 496.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:32:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 380ms (Views: 360.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2017-04-30 23:32:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (4.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.6ms)
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:32:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (1.8ms)
+Started GET "/signup" for 172.19.0.1 at 2017-04-30 23:32:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendered layouts/_header.html.erb (1.0ms)
+Processing by UsersController#new as HTML
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 338ms (Views: 322.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (30.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 423ms (Views: 395.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:33:00 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:33:00 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 430ms (Views: 408.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 518ms (Views: 494.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:33:47 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 279ms (Views: 267.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:33:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 273ms (Views: 252.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:34:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 364ms (Views: 340.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:34:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 292ms (Views: 271.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:34:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 385ms (Views: 362.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:34:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 357ms (Views: 341.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:34:20 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 328ms (Views: 311.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:34:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 378ms (Views: 357.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:34:24 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 330ms (Views: 308.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:43:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (70.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 952ms (Views: 925.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-04-30 23:43:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#login as HTML
+  Rendering static_pages/login.html.erb within layouts/application
+  Rendered static_pages/login.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 328ms (Views: 307.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2017-04-30 23:44:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8+Ivz0snXib7JNzLh0o1NPlXMpIOLHPA81+Xs+H3vsgBc91+9E0f5CR3nIOLjgqWpNv0SBOC536iUTTXGM5etQ==", "session"=>{"email"=>"caackermann@uc.cl", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 18ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/users/2" for 172.19.0.1 at 2017-04-30 23:44:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 379ms (Views: 344.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:44:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 302ms (Views: 285.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:47:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 500 Internal Server Error in 348ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/myapp/app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+RTBUY", id: 'logo',root_path );@output_buffer.safe_append='<
+                              ^
+/myapp/app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/myapp/app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3535489591618438657_69823183606660'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.0ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:48:00 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/myapp/app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+RTBUY", id: 'logo',root_path );@output_buffer.safe_append='
+                              ^
+/myapp/app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/myapp/app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3535489591618438657_69823183480060'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.4ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:49:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 500 Internal Server Error in 538ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/myapp/app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+RTBUY", id: 'logo',root_path );@output_buffer.safe_append='
+                              ^
+/myapp/app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/myapp/app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3535489591618438657_69823253445600'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.2ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:50:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (21.9ms)
+Completed 500 Internal Server Error in 416ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/":String):
+    2:   <div class="container">
+    3:     <nav>
+    4:       <ul>
+    5:         <%= link_to "SMARTBUY", id= 'logo',root_path %>
+    6:         <li><%= link_to "Home", root_path %></li>
+    7:         <li><%= link_to "Help", help_path %></li>
+    8:         <% if logged_in? %>
+  
+app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb__2869674520386180667_69823285300000'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3535489591618438657_69823264038780'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.3ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:50:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/myapp/app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+TBUY", id: 'logo', root_path );@output_buffer.safe_append='
+                              ^
+/myapp/app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/myapp/app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/_header.html.erb:5: syntax error, unexpected ')', expecting =>
+app/views/layouts/_header.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/_header.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3535489591618438657_69823354777240'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.4ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:50:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 393ms (Views: 368.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:51:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 368ms (Views: 344.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:51:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 341ms (Views: 318.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/help" for 172.19.0.1 at 2017-04-30 23:51:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 365ms (Views: 342.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:52:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 311ms (Views: 289.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:54:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 374ms (Views: 351.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:54:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (46.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 351ms (Views: 331.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/help" for 172.19.0.1 at 2017-04-30 23:54:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 324ms (Views: 302.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/help" for 172.19.0.1 at 2017-04-30 23:55:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (6.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 619ms (Views: 596.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 348ms (Views: 323.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:55:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y/ux3m2Zs5dsh/sPt9PGkerpGr8PHpqA+wgnvVQCiGMIAz3BUXSDKg5JrjrEiYSaD7OIDosUKpKKkI9Gjj++lA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 983ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:55:27 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y/ux3m2Zs5dsh/sPt9PGkerpGr8PHpqA+wgnvVQCiGMIAz3BUXSDKg5JrjrEiYSaD7OIDosUKpKKkI9Gjj++lA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 946ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 352ms (Views: 328.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (13.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 840ms (Views: 815.3ms | ActiveRecord: 0.6ms)
+
+
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (6.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 766ms (Views: 720.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 376ms (Views: 353.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (16.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 622ms (Views: 598.1ms | ActiveRecord: 0.8ms)
+
+
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 560ms (Views: 535.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:55:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 324ms (Views: 301.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 172.19.0.1 at 2017-04-30 23:55:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 350ms (Views: 319.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2" for 172.19.0.1 at 2017-04-30 23:55:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 294ms (Views: 271.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:55:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4i3wPe0mmbpIVeMggHQf+ZNClxPrvEjHdY9Q85B+WI8h1Xwi0cupByqbthXzLl3ydhgFom+2+NUEF/gISkNueA=="}
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:55:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+No template found for SessionsController#destroy, rendering head :no_content
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4i3wPe0mmbpIVeMggHQf+ZNClxPrvEjHdY9Q85B+WI8h1Xwi0cupByqbthXzLl3ydhgFom+2+NUEF/gISkNueA=="}
+Completed 204 No Content in 1036ms (ActiveRecord: 0.0ms)
+
+
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 871ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:56:29 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4i3wPe0mmbpIVeMggHQf+ZNClxPrvEjHdY9Q85B+WI8h1Xwi0cupByqbthXzLl3ydhgFom+2+NUEF/gISkNueA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 871ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 290ms (Views: 272.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 321ms (Views: 299.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:37 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 343ms (Views: 319.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:56:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M4oirSYYTf4icI7wXE8K+j8YRtug8sSs31+WFWqmYHPwcq6yGvV9Q0C+28UvFUjx2kLUaiT4dL6uxz7usJtWhA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 918ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 331ms (Views: 309.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 321ms (Views: 298.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:46 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 672ms (Views: 651.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/help" for 172.19.0.1 at 2017-04-30 23:56:46 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendered layouts/_shim.html.erb (0.6ms)
+Processing by StaticPagesController#help as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (23.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 698ms (Views: 677.2ms | ActiveRecord: 0.5ms)
+
+
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 454ms (Views: 426.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 172.19.0.1 at 2017-04-30 23:56:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 335ms (Views: 313.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:56:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"woli30HFmRiYmzc5jMQAcOFjuDbUTt0SSB+6G3WIepEBce7AfSippfpVYgz/nkJ7BDkqh1BEbQA5hxLgr7VMZg=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Started GET "/users/2" for 172.19.0.1 at 2017-04-30 23:56:50 +0000
+Completed 204 No Content in 1167ms (ActiveRecord: 0.0ms)
+
+
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 333ms (Views: 310.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:56:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 352ms (Views: 330.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:56:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"orV8+8lNhi1UMIqLge45BeBbc6CYMInGKTAE6rYXkOphTfDk9aC2kDb+377ytHsOBQHhERw6OdRYqKwRbCqmHQ=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 925ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-04-30 23:59:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (61.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 473ms (Views: 452.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:59:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gxnJwav2PDPaWsJIEHDQ4DnKxaG8X/jraOPkZ9cu8dFA4UXelxsMjriUl31jKpLr3JBXEDhVSPkZe0ycDRPHJg=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 992ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:59:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gxnJwav2PDPaWsJIEHDQ4DnKxaG8X/jraOPkZ9cu8dFA4UXelxsMjriUl31jKpLr3JBXEDhVSPkZe0ycDRPHJg=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 983ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-04-30 23:59:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gxnJwav2PDPaWsJIEHDQ4DnKxaG8X/jraOPkZ9cu8dFA4UXelxsMjriUl31jKpLr3JBXEDhVSPkZe0ycDRPHJg=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 899ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (50.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 434ms (Views: 411.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 303ms (Views: 285.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 309ms (Views: 288.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (7.4ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 1055ms (Views: 1032.7ms | ActiveRecord: 0.6ms)
+
+
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (31.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1179ms (Views: 1129.0ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (11.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 994ms (Views: 949.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 340ms (Views: 316.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-01 00:00:46 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hFhK8l02EZXkx96P8FA0Fk51gDkGQRuvJYkcje8psjFHoMbtYdshKIYJi7qDCnYdqy8SiIJLq71UEbR2NRSExg=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 1078ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for 172.19.0.1 at 2017-05-01 00:00:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 318ms (Views: 288.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 172.19.0.1 at 2017-05-01 00:00:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 362ms (Views: 339.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:00:57 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 342ms (Views: 318.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-01 00:00:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ToYACMy+//2FTawLUTNlyrVj+sDm9CMpR/MQUNeHY+CNfowX8FPPQOeD+T4iaSfBUDlocWL+kzs2a7irDbpVFw=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 858ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:02:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (73.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 493ms (Views: 469.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-01 00:02:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cqn9hxrFCxGULnnWlDqxof8Bzhgqvk7V7oKbGXdmtCOxUXGYJig7rPbgLOPnYPOqGltcqa60/sefGjPirVuC1A=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:02:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 348ms (Views: 323.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:02:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 376ms (Views: 354.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-01 00:02:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 361ms (Views: 344.8ms | ActiveRecord: 0.9ms)
+
+

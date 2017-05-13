@@ -24,9 +24,9 @@ class ArticulosController < ApplicationController
   # POST /articulos
   # POST /articulos.json
   def create
-    @micropost = current_user.microposts.build(micropost_params)
-    if @micropost.save
-      flash[:success] = "Micropost created!"
+    @articulo = current_user.articulos.build(articulos_params)
+    if @articulo.save
+      flash[:success] = "Articulo created!"
       redirect_to root_url
     else
       render 'static_pages/home'

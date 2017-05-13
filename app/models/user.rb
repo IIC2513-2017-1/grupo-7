@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_many :articulos, dependent: :destroy
   before_save { email.downcase! }
+  before_save :default_privilege
   validates :name, presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 },
@@ -9,4 +10,7 @@ class User < ApplicationRecord
 
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
+  def default_privilege
+    self.admin = false if self.admin.nil?
+  end
 end

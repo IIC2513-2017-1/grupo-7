@@ -5,7 +5,9 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %> <br>
+        <% if current_user.admin?%>
         <%= link_to "Publicar Articulo", add_articulo_path %>
+        <% end %>
       </h1>
     </section>
   </aside>

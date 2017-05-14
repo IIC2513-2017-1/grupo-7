@@ -24,6 +24,9 @@
   <strong>Descripcion:</strong>
   <%= @articulo.descripcion %>
 </p>
-
-<%= link_to 'Edit', edit_articulo_path(@articulo) %> |
-<%= link_to 'Back', articulos_path %>
+<span class="timestamp">
+  Publicado hace <%= time_ago_in_words(@articulo.created_at) %> .
+</span>
+<% if current_user.admin?%>
+  <%= link_to 'Edit', edit_articulo_path(@articulo) %>
+<% end %>

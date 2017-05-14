@@ -4,4 +4,12 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+
+  def add_articulo
+    @articulo = current_user.articulos.build if logged_in?
+  end
+
+  def home
+
+  end
 end

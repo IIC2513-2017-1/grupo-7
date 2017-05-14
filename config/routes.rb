@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'cart/new'
+
   get 'sessions/new'
 
   root 'static_pages#home'
@@ -9,6 +11,7 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get '/create', to: 'articulos#new'
+  get '/add_articulo', to: 'static_pages#add_articulo'
 
   resources :users
   resources :articulos

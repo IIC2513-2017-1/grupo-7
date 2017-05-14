@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170513222727) do
+ActiveRecord::Schema.define(version: 20170514024125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,16 @@ ActiveRecord::Schema.define(version: 20170513222727) do
     t.text     "descripcion"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "carts", force: :cascade do |t|
+    t.integer  "cantidad"
+    t.integer  "user_id"
+    t.integer  "articulo_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["articulo_id"], name: "index_carts_on_articulo_id", using: :btree
+    t.index ["user_id"], name: "index_carts_on_user_id", using: :btree
   end
 
   create_table "comentarios", force: :cascade do |t|
@@ -46,4 +56,6 @@ ActiveRecord::Schema.define(version: 20170513222727) do
     t.boolean  "admin"
   end
 
+  add_foreign_key "carts", "articulos"
+  add_foreign_key "carts", "users"
 end

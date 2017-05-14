@@ -1,4 +1,5 @@
 class ArticulosController < ApplicationController
+  before_action :logged_in_user, only: [:create, :destroy]
   before_action :set_articulo, only: [:show, :edit, :update, :destroy]
 
   # GET /articulos
@@ -24,9 +25,9 @@ class ArticulosController < ApplicationController
   # POST /articulos
   # POST /articulos.json
   def create
-    @articulo = current_user.articulos.build(articulos_params)
+    @articulo = current_user.articulos.build(articulo_params)
     if @articulo.save
-      flash[:success] = "Articulo created!"
+      flash[:success] = "Articulo publicado!"
       redirect_to root_url
     else
       render 'static_pages/home'
@@ -65,6 +66,6 @@ class ArticulosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def articulo_params
-      params.require(:articulo).permit(:name, :user_id, :stock, :precio, :descripcion)
+      params.require(:articulo).permit(:name, :precio, :stock, :descripcion)
     end
 end

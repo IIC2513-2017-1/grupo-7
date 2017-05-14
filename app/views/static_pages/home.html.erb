@@ -13,13 +13,10 @@
 </div>
 
 <div <div class='center'>
+  <h3> Productos recientes: </h3>
+  <%= render 'shared/articulos_index'%>
   <% if logged_in? %>
-    <% if current_user.admin? %>
-      <h2> Admin View </h2>
-      <%= render 'shared/articulos_index'%>
-    <%else %>
-      <h2> User View </h2>
-    <% end %>
+
   <% else %>
     <h2>Welcome to SmartBuy</h2>
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>

@@ -16,6 +16,7 @@
   <% if logged_in? %>
     <% if current_user.admin? %>
       <h2> Admin View </h2>
+      <%= render 'shared/articulos_index'%>
     <%else %>
       <h2> User View </h2>
     <% end %>

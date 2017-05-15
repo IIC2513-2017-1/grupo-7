@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   get '/create', to: 'articulos#new'
   get '/add_articulo', to: 'static_pages#add_articulo'
-
+  resources :carts
   resources :users
   resources :articulos
 end

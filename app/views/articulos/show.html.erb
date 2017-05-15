@@ -28,6 +28,14 @@
   Publicado hace <%= time_ago_in_words(@articulo.created_at) %> .
 </span>
 <% if logged_in?%>
+  <%= form_for @cart do |f| %>
+    <%= flash[:danger] %>
+    <%= f.hidden_field :cantidad, value: 1 %>
+    <%= f.hidden_field :articulo_id, value: @articulo.id %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.submit 'Agregar al carro' %>
+    <%= link_to "Ver Carro", user_path%>
+  <% end %>
   <% if current_user.admin?%>
     <%= link_to 'Edit', edit_articulo_path(@articulo) %>
   <% end %>

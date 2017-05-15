@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+  <%@carts = Cart.all%>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Cantidad</th>
+    </tr>
+  <% @carts.each do |cart| %>
+  <% if cart.user_id == current_user.id %>
+  <% @articulo = Articulo.find(cart.articulo_id) %>
+  <tr>
+    <td><%=link_to@articulo.name, @articulo %></td>
+      <td><%= cart.cantidad %></td>
+      <td><%= @articulo.precio %></td>
+      <% end %>
+  <% end %>
+</ul>

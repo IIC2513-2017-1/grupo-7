@@ -1,20 +1,27 @@
-<p id="notice"><%= notice %></p>
+<section class="products">
 
-<ul class="articulos_inicio">
   <%@articulos = Articulo.all%>
   <% @articulos.each do |articulo| %>
-    <li>
-      <%= gravatar2_for articulo, size: 50 %>
-      <%= link_to articulo.name, articulo %><br>
-      Precio:<%= articulo.precio%><br>
-      Unidades:<%= articulo.stock %><br>
-      Descripcion: <%= articulo.descripcion %><br>
-
-    </li><br>
-  <% end %>
-</ul>
-<% if logged_in?%>
-  <% if current_user.admin?%>
-    <%= link_to 'Publicar articulo', add_articulo_path %>
-    <% end %>
+    <div class="product-card">
+    <%= link_to articulo do%>
+    <div class="product-image">
+      <%= gravatar2_for articulo%>
+    </div>
+    <div class="product-info">
+      <h5><%= articulo.name%></h5>
+      <h6><%= articulo.precio%></h6>
+    </div>
 <% end %>
+<% if logged_in? %>
+  <% if current_user.admin? %>
+      <div class="product-option" id="contenedor" >
+      <ul>
+      <li><%= link_to edit_articulo_path(articulo) do %><i class="fa fa-pencil fa-2x" aria-hidden="true"></i><% end %></li>
+      <li><%= link_to "#" do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %></li>
+      </ul>
+      </div>
+  <% end %>
+<% end %>
+  </div>
+  <% end %>
+</section>

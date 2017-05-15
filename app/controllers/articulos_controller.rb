@@ -11,6 +11,7 @@ class ArticulosController < ApplicationController
   # GET /articulos/1
   # GET /articulos/1.json
   def show
+    @cart = Cart.new
   end
 
   # GET /articulos/new

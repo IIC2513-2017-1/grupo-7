@@ -17947,3 +17947,16 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 378ms (Views: 352.8ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for 172.19.0.1 at 2017-05-15 03:27:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (9.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (35.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 360ms (Views: 332.9ms | ActiveRecord: 1.5ms)
+
+

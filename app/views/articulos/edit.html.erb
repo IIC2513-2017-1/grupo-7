@@ -1,6 +1,8 @@
 <h1>Editing Articulo</h1>
-
-<%= render 'form', articulo: @articulo %>
-
-<%= link_to 'Show', @articulo %> |
+<% if logged_in? %>
+  <% if current_user.admin? %>
+    <%= render 'form', articulo: @articulo %>
+  <% end %>
+  <%= link_to 'Show', @articulo %>
+<% end %>
 <%= link_to 'Back', articulos_path %>

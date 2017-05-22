@@ -1,11 +1,16 @@
+<% provide(:title, "Carrito | SmartBuy") %>
+<%= render 'layouts/sidebar'%>
+<div class='center'>
 <p id="notice"><%= notice %></p>
 
   <%@carts = Cart.all%>
+  <h4>Items en el carrito</h4>
+  <div class='center'>
   <table>
     <tr>
       <th>Nombre</th>
-      <th>Precio</th>
       <th>Cantidad</th>
+      <th>Precio</th>
     </tr>
   <% @carts.each do |cart| %>
   <% if cart.user_id == current_user.id %>
@@ -17,3 +22,5 @@
       <% end %>
   <% end %>
 </ul>
+</div>
+</div>

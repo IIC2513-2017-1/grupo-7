@@ -1,19 +1,8 @@
 <% provide(:title, "Home | SmartBuy") %>
-<div class="sidebar">
-<ul>
-<li><%= link_to "Ropa Hombre", '# '%></li>
-<li><%= link_to "Ropa Mujer", '# '%></li>
-<li><%= link_to "Calzado", '# '%></li>
-<li><%= link_to "Tecnologia", '# '%></li>
-<li><%= link_to "Accesorios", '# '%></li>
-<li><%= link_to "Outdoor", '# '%></li>
-<li><%= link_to "Otros", '# '%></li>
-
-</ul>
-</div>
+<%= render 'layouts/sidebar'%>
 
 <div <div class='center'>
-  <h3> Productos recientes: </h3>
+  <h4> Productos recientes: </h4>
   <%= render 'shared/articulos_index'%>
   <% if logged_in? %>
     <% if current_user.admin?%>

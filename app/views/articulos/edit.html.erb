@@ -1,8 +1,13 @@
-<h1>Editing Articulo</h1>
+<% provide(:title, "Editar Articulo | SmartBuy") %>
+<%= render 'layouts/sidebar'%>
+<div class='center'>
+
+<h4>Editar Articulo</h4>
 <% if logged_in? %>
   <% if current_user.admin? %>
     <%= render 'form', articulo: @articulo %>
   <% end %>
-  <%= link_to 'Show', @articulo %>
+  <%= link_to 'Ver Articulo', @articulo %>
 <% end %>
-<%= link_to 'Back', articulos_path %>
+<%= link_to 'Ver todos', articulos_path %>
+</div>

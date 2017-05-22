@@ -9,7 +9,8 @@ class StaticPagesController < ApplicationController
     @articulo = current_user.articulos.build if logged_in?
   end
 
-  def home
-
+  def carrito
   end
+
+
 end

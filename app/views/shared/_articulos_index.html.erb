@@ -17,7 +17,7 @@
       <div class="product-option" id="contenedor" >
       <ul>
       <li><%= link_to edit_articulo_path(articulo) do %><i class="fa fa-pencil fa-2x" aria-hidden="true"></i><% end %></li>
-      <li><%= link_to "#" do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %></li>
+      <li><%= link_to articulo, method: :delete, data: { confirm: 'Are you sure?' } do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %></li>
       </ul>
       </div>
   <% end %>

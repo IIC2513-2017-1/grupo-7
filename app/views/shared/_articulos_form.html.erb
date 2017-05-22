@@ -1,25 +1,27 @@
 <% if logged_in?%>
 <% if current_user.admin?%>
+<div class='center'>
   <%= form_for(@articulo) do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
     <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+      <p><%= f.label "Nombre" %>
+      <%= f.text_field :name %></p>
     </div>
     <div class="field">
-      <%= f.label :precio %>
-      <%= f.number_field :precio %>
+      <p><%= f.label :precio %>
+      <%= f.number_field :precio %></p>
     </div>
     <div class="field">
-      <%= f.label :stock %>
-      <%= f.number_field :stock %>
+      <p><%= f.label :stock %>
+      <%= f.number_field :stock %></p>
     </div>
     <div class="field">
-      <%= f.label :descripcion %>
-      <%= f.text_area :descripcion, placeholder: "Agrega una descripcion..." %>
+      <p><%= f.label :descripcion %>
+      <%= f.text_area :descripcion, placeholder: "Agrega una descripcion...", :rows=> 10, :cols=>50 %></p>
     </div>
-    <%= f.submit "Post", class: "btn btn-primary" %>
+    <%= f.submit "Crear", class: "btn btn-primary" %>
   <% end %>
+</div>
 <% else %>
   <% controller.redirect_to root_path%>
 <% end %>

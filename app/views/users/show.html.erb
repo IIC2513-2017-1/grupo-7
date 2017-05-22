@@ -1,17 +1,12 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %> <br>
-        <% if current_user.admin?%>
-        <%= link_to "Publicar Articulo", add_articulo_path %>
-        <% end %>
-      </h1>
-    </section>
-  </aside>
-</div>
-<div>
-  <%= render 'shared/carts_index' %>
+<br><br>
+<%= render 'layouts/sidebar'%>
+
+<div class ='center'>
+    <%= gravatar_for @user %>
+    <h4><%= @user.name %></h4>
+    <% if current_user.admin?%>
+      <p><%= link_to "Publicar Articulo", add_articulo_path %></p>
+    <% end %>
+  <p><%= link_to "Ver Carro", carrito_path %></p>
 </div>

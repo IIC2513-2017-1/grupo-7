@@ -1,4 +1,4 @@
 class Cart < ApplicationRecord
   belongs_to :user
-  belongs_to :articulo
+  has_many :articulo, dependent: :destroy
 end

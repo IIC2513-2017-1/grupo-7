@@ -1,8 +1,6 @@
 <% provide(:title, "Editar Articulo | SmartBuy") %>
 <%= render 'layouts/sidebar'%>
-<div class='center'>
-
-<h4>Editar Articulo</h4>
+<div class='wrapper'>
 <% if logged_in? %>
   <% if current_user.admin? %>
     <%= render 'form', articulo: @articulo %>

@@ -11,32 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <p><%= f.label :name %>
-    <%= f.text_field :name %></p>
-  </div>
+  <div class="basic-form">
+    <p class="page-title">Editar Articulo</p>
+    <%= f.label :name, "Nombre" %>
+    <%= f.text_field :name %>
 
-  <div class="field">
-    <p><%= f.label :user_id %>
-    <%= f.number_field :user_id %></p>
-  </div>
+    <%= f.label :stock %>
+    <%= f.number_field :stock %>
 
-  <div class="field">
-    <p><%= f.label :stock %>
-    <%= f.number_field :stock %></p>
-  </div>
+    <%= f.label :precio %>
+    <%= f.number_field :precio %>
 
-  <div class="field">
-    <p><%= f.label :precio %>
-    <%= f.number_field :precio %></p>
-  </div>
+    <%= f.label :descripcion %>
+    <%= f.text_area :descripcion %>
 
-  <div class="field">
-    <p><%= f.label :descripcion %>
-    <%= f.text_area :descripcion %></p>
-  </div>
-
-  <div class="actions">
+    <br><br>
     <%= f.submit "Guardar Cambios" %>
-  </div>
+    <br><br>
 <% end %>
+</div>

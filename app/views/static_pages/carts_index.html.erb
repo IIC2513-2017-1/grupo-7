@@ -1,26 +1,37 @@
 <% provide(:title, "Carrito | SmartBuy") %>
 <%= render 'layouts/sidebar'%>
-<div class='wrapper'>
-  <p class="page-title">Items en el carrito</p>
-  <p id="notice"><%= notice %></p>
-  <div class ="center">
-  <%@carts = Cart.all%>
+<% if logged_in?%>
+  <div class='wrapper'>
+    <p class="page-title">Items en el carrito</p>
+    <p id="notice"><%= notice %></p>
+    <div class ="center">
+    <%@carts = Cart.all%>
+    <% @total = 0%>
+    <table>
 
-  <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th></th>
+      </tr>
+
+    <% @carts.each do |cart| %>
+    <% if cart.user_id == current_user.id %>
+    <% @articulo = Articulo.find(cart.articulo_id) %>
+
     <tr>
-      <th>Nombre</th>
-      <th>Cantidad</th>
-      <th>Precio</th>
-    </tr>
-  <% @carts.each do |cart| %>
-  <% if cart.user_id == current_user.id %>
-  <% @articulo = Articulo.find(cart.articulo_id) %>
-  <tr>
-    <td><%=link_to@articulo.name, @articulo %></td>
-      <td><%= cart.cantidad %></td>
-      <td><%= @articulo.precio %></td>
-      <% end %>
-  <% end %>
-</ul>
-</div>
-</div>
+      <td><%=link_to@articulo.name, @articulo %></td>
+        <td><%= cart.cantidad %></td>
+        <td><%= cart.cantidad.to_i * @articulo.precio.to_i %></td>
+        <td><%= link_to 'Eliminar', cart, method: :delete, data: { confirm: 'Are you sure?'} %><td>
+        <%@total += cart.cantidad.to_i * @articulo.precio.to_i%>
+        <% end %>
+    <% end %>
+  </table>
+  <p> Total: <%= @total %></p>
+  </div>
+  </div>
+<%else%>
+<%controller.redirect_to root_path%>
+<%end%>

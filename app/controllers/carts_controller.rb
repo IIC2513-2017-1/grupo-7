@@ -18,6 +18,10 @@ class CartsController < ApplicationController
       flash[:danger] = "Problema"
     end
   end
+  def destroy
+    Cart.find_by(id:params[:id]).destroy
+    redirect_to :back
+  end
 
   def cart_params
     params.require(:cart).permit(:cantidad, :articulo_id, :user_id)

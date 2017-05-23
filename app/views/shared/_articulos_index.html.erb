@@ -1,27 +1,40 @@
-<section class="products">
+<ejemplo1>
+<div class='center'>
+<ul class="catCardList">
+<%@articulos = Articulo.all%>
+<% @articulos.each do |articulo| %>
+<li class="catCardList">
+<div class="catCard">
+<a href="#"><img src="http://placehold.it/221x200" alt=""></a>
+<div class="lowerCatCard">
 
-  <%@articulos = Articulo.all%>
-  <% @articulos.each do |articulo| %>
-    <div class="product-card">
-    <%= link_to articulo do%>
-    <div class="product-image">
-      <%= gravatar2_for articulo%>
-    </div>
-    <div class="product-info">
-      <h5><%= articulo.name%></h5>
-      <h6><%= articulo.precio%></h6>
-    </div>
-<% end %>
 <% if logged_in? %>
   <% if current_user.admin? %>
-      <div class="product-option" id="contenedor" >
+      <div id="navcontainer">
       <ul>
-      <li><%= link_to edit_articulo_path(articulo) do %><i class="fa fa-pencil fa-2x" aria-hidden="true"></i><% end %></li>
+      <li ><%= link_to edit_articulo_path(articulo) do %><i  class="fa fa-pencil fa-2x" aria-hidden="true"></i><% end %></li>
       <li><%= link_to articulo, method: :delete, data: { confirm: 'Are you sure?' } do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %></li>
       </ul>
       </div>
   <% end %>
 <% end %>
-  </div>
-  <% end %>
-</section>
+
+<h3><%= articulo.name%></h3>
+<div class="startingPrice">Precio: <span><%= articulo.precio%></span></div>
+<p><%= articulo.descripcion%></p>
+
+<%= link_to articulo do%>
+<div id="catCardButton" class="button">View Product</div>
+<% end %>
+
+
+</div>
+</div>
+</li>
+
+
+<% end %>
+
+</ul>
+</div>
+</ejemplo1>

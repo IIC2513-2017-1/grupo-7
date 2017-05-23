@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 <%= render 'layouts/sidebar'%>
+<div class="wrapper">
+  <p class="page-title"><%= @articulo.name %></p>
 <div class='center'>
-  <p><strong>Name:</strong><%= @articulo.name %></p>
-  <p><strong>User:</strong><%= @articulo.user_id %></p>
   <p><strong>Stock:</strong><%= @articulo.stock %></p>
   <p><strong>Precio:</strong><%= @articulo.precio %></p>
   <p><strong>Descripcion:</strong><%= @articulo.descripcion %></p>
@@ -22,4 +22,5 @@
       </p>
     <% end %>
   <% end %>
+</div>
 </div>

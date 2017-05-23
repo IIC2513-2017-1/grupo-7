@@ -1,30 +1,28 @@
 <% if logged_in?%>
 <% if current_user.admin?%>
-<div class='center'>
+<div class="wrapper">
+
+<div class='basic-form'>
+  <p class="page-title">Publicar Articulo</p>
   <%= form_for(@articulo) do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
-    <div class="field">
-      <p><%= f.label "Nombre" %>
-      <%= f.text_field :name %></p>
-    </div>
-    <div class="field">
-      <p><%= f.label :precio %>
-      <%= f.number_field :precio %></p>
-    </div>
-    <div class="field">
-      <p><%= f.label :stock %>
-      <%= f.number_field :stock %></p>
-    </div>
-    <div class="field">
-      <p><%= f.label :descripcion %>
-      <%= f.text_area :descripcion, placeholder: "Agrega una descripcion...", :rows=> 10, :cols=>50 %></p>
-    </div>
+      <%= f.label "Nombre" %>
+      <%= f.text_field :name %>
+      <%= f.label :precio %>
+      <%= f.number_field :precio %>
+      <%= f.label :stock %>
+      <%= f.number_field :stock %>
+      <%= f.label :descripcion %>
+      <%= f.text_area :descripcion, placeholder: "Agrega una descripcion...", :rows=> 10, :cols=>50 %>
+    <br><br>
     <%= f.submit "Crear", class: "btn btn-primary" %>
+    <br><br>
   <% end %>
-</div>
 <% else %>
   <% controller.redirect_to root_path%>
 <% end %>
 <% else %>
   <% controller.redirect_to login_path%>
 <% end %>
+</div>
+</div>

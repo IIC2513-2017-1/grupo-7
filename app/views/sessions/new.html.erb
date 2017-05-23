@@ -1,8 +1,7 @@
 <% provide(:title, "Log in") %>
-<h1>Log in</h1>
-
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
+<div class="login">
+  <div class="basic-form">
+    <p class='page-title'>Log in</p>
     <%= form_for(:session, url: login_path) do |f| %>
     <%= flash[:danger] %>
       <%= f.label :email %>
@@ -10,15 +9,14 @@
 
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
-
+      <br><br>
       <%= f.label :remember_me, class: "checkbox inline" do %>
-        <%= f.check_box :remember_me %>
-        <span>Remember me on this computer</span>
+        <%= f.check_box :remember_me %><span>Remember me on this computer</span>
       <% end %>
-
+      <br>
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <p>Nuevo usuario? <%= link_to "Crear cuenta!", signup_path %></p>
   </div>
-</div>
+  </div>

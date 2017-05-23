@@ -1,6 +1,6 @@
-<header class="navbar">
-  <div class="container">
-      <ul class='nav'>
+  <div class ="navbar">
+    <div>
+      <ul>
         <%= link_to "SMARTBUY" , root_path, id: 'logo' %>
         <li><%= link_to "Inicio", root_path %></li>
         <% if logged_in? %>
@@ -16,5 +16,5 @@
           <li><%= link_to "Log in", login_path %></li>
         <% end %>
       </ul>
+    </div>
   </div>
-</header>

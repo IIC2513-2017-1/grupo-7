@@ -2,11 +2,13 @@
 <br><br>
 <%= render 'layouts/sidebar'%>
 
-<div class ='center'>
+<div class ='wrapper'>
+  <div class ='center'>
     <%= gravatar_for @user %>
     <h4><%= @user.name %></h4>
     <% if current_user.admin?%>
       <p><%= link_to "Publicar Articulo", add_articulo_path %></p>
     <% end %>
   <p><%= link_to "Ver Carro", carrito_path %></p>
+</div>
 </div>

@@ -1,8 +1,7 @@
 <% provide(:title, "Home | SmartBuy") %>
 <%= render 'layouts/sidebar'%>
-
-<div <div class='center'>
-  <h4> Productos recientes: </h4>
+<div class="wrapper">
+  <p class='page-title'>Productos recientes</p>
   <%= render 'shared/articulos_index'%>
   <% if logged_in? %>
     <% if current_user.admin?%>

@@ -1,11 +1,11 @@
 <% provide(:title, "Carrito | SmartBuy") %>
 <%= render 'layouts/sidebar'%>
-<div class='center'>
-<p id="notice"><%= notice %></p>
-
+<div class='wrapper'>
+  <p class="page-title">Items en el carrito</p>
+  <p id="notice"><%= notice %></p>
+  <div class ="center">
   <%@carts = Cart.all%>
-  <h4>Items en el carrito</h4>
-  <div class='center'>
+
   <table>
     <tr>
       <th>Nombre</th>

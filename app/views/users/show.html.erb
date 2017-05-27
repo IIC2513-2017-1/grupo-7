@@ -1,7 +1,7 @@
 <% provide(:title, @user.name) %>
 <br><br>
 <%= render 'layouts/sidebar'%>
-
+<% if logged_in?%>
 <div class ='wrapper'>
   <div class ='center'>
     <%= gravatar_for @user %>
@@ -12,3 +12,4 @@
   <p><%= link_to "Ver Carro", carrito_path %></p>
 </div>
 </div>
+<%end%>

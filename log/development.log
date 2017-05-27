@@ -30691,3 +30691,2266 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 531ms (Views: 498.8ms | ActiveRecord: 1.2ms)
 
 
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddResetToUsers (20170527034535)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_digest" character varying[0m
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_sent_at" timestamp[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170527034535"]]
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:54:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.8ms)
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (196.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (259.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 5739ms (Views: 5706.0ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:54:37 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (15.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (72.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 641ms (Views: 616.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/18" for 172.19.0.1 at 2017-05-27 03:54:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 490ms (Views: 445.2ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-27 03:54:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sEMkDI4cBODVnfszW91/PinzwyjdjKuJFFhvc010I7kSOUOHgVfIFvWXxVNpwhpasySf9z48qnw7+xW/mCQE5w=="}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:54:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (2.0ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (48.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 539ms (Views: 522.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 03:54:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 443ms (Views: 418.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 03:54:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 705ms (Views: 683.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 03:54:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EI36DJt/JGTKt1IYLUmq6adY6B+RCFtOeJP8uLEnbJPSqetezx1JetUfX6DnF3qWsrOQGJFgxvkmPTPjREpVjw==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", 2017-05-27 03:54:59 UTC], ["id", 18]]
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", 2017-05-27 03:54:59 UTC], ["id", 18]]
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (1.4ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (1.2ms)
+UserMailer#password_reset: processed outbound mail in 222.0ms
+Sent mail to caackermann@uc.cl (3166.5ms)
+Date: Sat, 27 May 2017 03:55:00 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928f89440dcc_1209f554363f6@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928f8943fb32_1209f554362e1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928f8943fb32_1209f554362e1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+User#password_reset
+
+, find me in app/views/user_mailer/password_reset.text.erb
+
+
+----==_mimepart_5928f8943fb32_1209f554362e1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>User#password_reset</h1>
+
+<p>
+  , find me in app/views/user_mailer/password_reset.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5928f8943fb32_1209f554362e1--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3649ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:55:03 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 624ms (Views: 588.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/18" for 172.19.0.1 at 2017-05-27 04:00:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (59.5ms)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin?' for nil:NilClass):
+     6:   <div class ='center'>
+     7:     <%= gravatar_for @user %>
+     8:     <h4><%= @user.name %></h4>
+     9:     <% if current_user.admin?%>
+    10:       <p><%= link_to "Publicar Articulo", add_articulo_path %></p>
+    11:     <% end %>
+    12:   <p><%= link_to "Ver Carro", carrito_path %></p>
+  
+app/views/users/show.html.erb:9:in `_app_views_users_show_html_erb___1143403302211444300_70351673553200'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.8ms)
+Started GET "/users/18" for 172.19.0.1 at 2017-05-27 04:01:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered users/show.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 623ms (Views: 595.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:01:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+Completed 200 OK in 550ms (Views: 524.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 04:01:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 523ms (Views: 464.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 04:01:43 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"teb6nNRQWvEKZLG1tYcisnYowPK+VkOvMDFfN0swEkh3wuvOgDI37xXMvA1/2fLNY8O49b4+3hhun5Bsvl0rVA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", 2017-05-27 04:01:43 UTC], ["id", 18]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", 2017-05-27 04:01:43 UTC], ["id", 18]]
+  [1m[35m (14.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (2.5ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (1.2ms)
+UserMailer#password_reset: processed outbound mail in 239.5ms
+Sent mail to caackermann@uc.cl (3021.8ms)
+Date: Sat, 27 May 2017 04:01:43 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928fa279c9f5_1209f554365d9@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928fa279b2c0_1209f55436424";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928fa279b2c0_1209f55436424
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Para resetear tu contrase=C3=B1a haz click en el siguiente link:
+
+http://localhost:3000/password_resets/wKD2fDnorJz8Z11mzpFHJw/edit?email=3D=
+caackermann%40uc.cl
+
+Este link expirar=C3=A1 en 2 horas
+
+Si no solicitaste resetear tu contrase=C3=B1a, ignora este mail.
+
+
+----==_mimepart_5928fa279b2c0_1209f55436424
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Cambiar de contrase=C3=B1a</h1>
+
+<p>Para resetear tu contrase=C3=B1a haz click al siguiente link:</p>
+
+<a href=3D"http://localhost:3000/password_resets/wKD2fDnorJz8Z11mzpFHJw/e=
+dit?email=3Dcaackermann%40uc.cl">Reset password</a>
+
+<p>Este link expirar=C3=A1 en 2 horas</p>
+
+<p>
+Si no solicitaste un cambio de contrase=C3=B1a, ignora este mensaje.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5928fa279b2c0_1209f55436424--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3400ms (ActiveRecord: 29.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:01:46 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (43.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 462ms (Views: 441.1ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35mSQL (21.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:03:36 +0000
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:03:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (44.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (97.6ms)
+  Rendered sessions/new.html.erb within layouts/application (132.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 5856ms (Views: 5754.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 5963ms (Views: 5939.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:03:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (33.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 1732ms (Views: 1614.3ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 04:04:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pg9KEmdJ1hc0Yrtd+7GUAP/WKdIYe4UYCy+kI2hECb6hjZ6DfxYc6MHpijlxd8+Xcyml+EgnGSfouDnRUykRuw==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 04:04:07 UTC], ["updated_at", 2017-05-27 04:04:07 UTC], ["password_digest", "$2a$10$6k7OxWD/pUj5cWP4rzC51ObmtVWFoP06bD6WAXdQch4NHerfqQTs6"], ["admin", false], ["activation_digest", "$2a$10$PqSq4vXo3i3gQm4AwF//oO1eKCYpfS8cQQgjkJXnqTJo2ePNWcmG6"]]
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.7ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.3ms)
+UserMailer#account_activation: processed outbound mail in 830.3ms
+Sent mail to caackermann@uc.cl (3545.7ms)
+Date: Sat, 27 May 2017 04:04:10 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928faba5b8e_118a680c646a7@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928fab9eec9f_118a680c645c5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928fab9eec9f_118a680c645c5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/_zFbZEpvbH1DjFN-lf4Wxw/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928fab9eec9f_118a680c645c5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/_zFbZEpvbH1DjFN-lf4Wxw/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928fab9eec9f_118a680c645c5--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 5710ms (ActiveRecord: 20.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:04:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (1.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (104.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (146.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 670ms (Views: 645.0ms | ActiveRecord: 5.3ms)
+
+
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35mSQL (18.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:07:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (10.9ms)
+  [1m[36mArticulo Load (1.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (127.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (187.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2308ms (Views: 2255.4ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:07:22 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (80.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 606ms (Views: 560.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:07:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered users/new.html.erb within layouts/application (48.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 694ms (Views: 613.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:09:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered users/new.html.erb within layouts/application (57.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 575ms (Views: 553.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:09:25 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (71.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 664ms (Views: 642.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:09:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (34.2ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 588ms (Views: 566.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:09:50 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (60.9ms)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Nombre' for #<User:0x007f64d63859e0>):
+     8:       <%= render 'shared/error_messages', object: f.object %>
+     9: 
+    10:       <%= f.label :name %>
+    11:       <%= f.text_field "Nombre", class: 'form-control' %>
+    12: 
+    13:       <%= f.label :email %>
+    14:       <%= f.email_field :email, class: 'form-control' %>
+  
+app/views/users/new.html.erb:11:in `block in _app_views_users_new_html_erb__387916126589399695_70035533324040'
+app/views/users/new.html.erb:7:in `_app_views_users_new_html_erb__387916126589399695_70035533324040'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.9ms)
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:10:00 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+     8:       <%= render 'shared/error_messages', object: f.object %>
+     9: 
+    10:       <%= f.label :name %>
+    11:       <%= f.text_field "Nombre", :name, class: 'form-control' %>
+    12: 
+    13:       <%= f.label :email %>
+    14:       <%= f.email_field :email, class: 'form-control' %>
+  
+app/views/users/new.html.erb:11:in `block in _app_views_users_new_html_erb__387916126589399695_70035481790940'
+app/views/users/new.html.erb:7:in `_app_views_users_new_html_erb__387916126589399695_70035481790940'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.9ms)
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:10:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (39.5ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+     8:       <%= render 'shared/error_messages', object: f.object %>
+     9: 
+    10:       <%= f.label :name %>
+    11:       <%= f.text_field "Nombre", :name, class: 'form-control' %>
+    12: 
+    13:       <%= f.label :email %>
+    14:       <%= f.email_field :email, class: 'form-control' %>
+  
+app/views/users/new.html.erb:11:in `block in _app_views_users_new_html_erb__387916126589399695_70035521978520'
+app/views/users/new.html.erb:7:in `_app_views_users_new_html_erb__387916126589399695_70035521978520'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.5ms)
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:10:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered users/new.html.erb within layouts/application (30.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 578ms (Views: 555.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:10:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 528ms (Views: 500.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 04:11:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B4XEVkxHFOQ6CuRXxjRRyUo9ktJQTtYYTEGIBPhlbJSl/6PdQwzYEhoA2jf0KzSt0OrODbP+1+1j4vLILTVLyg==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 04:11:02 UTC], ["updated_at", 2017-05-27 04:11:02 UTC], ["password_digest", "$2a$10$0kVBIGy0CgSvczqVAPshNuMs6X9qH9rIhyqVAyYJ3Jd.s.e6z5fJe"], ["admin", false], ["activation_digest", "$2a$10$x7q3LquhyBo.ip8wPzil4uWfnm5KIgBHwQOYeUu5hph2UL4bKquia"]]
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.7ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.7ms)
+UserMailer#account_activation: processed outbound mail in 627.4ms
+Sent mail to caackermann@uc.cl (3444.8ms)
+Date: Sat, 27 May 2017 04:11:04 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928fc5823d26_1bf74308645@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928fc5815c5d_1bf74308533";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928fc5815c5d_1bf74308533
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+http://localhost:3000/account_activations/y71AUI8qCaxbmN0DKW0Xlw/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928fc5815c5d_1bf74308533
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="http://localhost:3000/account_activations/y71AUI8qCaxbmN0DKW0Xlw/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928fc5815c5d_1bf74308533--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 5332ms (ActiveRecord: 17.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:11:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 500ms (Views: 478.7ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35mSQL (17.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:14:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (21.4ms)
+  [1m[36mArticulo Load (1.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (92.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (190.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 2352ms (Views: 2297.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:14:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (84.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 602ms (Views: 583.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:14:57 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.6ms)
+  Rendered users/new.html.erb within layouts/application (47.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 751ms (Views: 593.0ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 04:15:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XJsnvDBXA60L1pmY9mdEHm2/t0TMx6X53PR/kZkXJw9bGfMtKAjJUv5dqPx8oR+J4UA7bpybOcY/Y+Jjono/Cg==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 04:15:09 UTC], ["updated_at", 2017-05-27 04:15:09 UTC], ["password_digest", "$2a$10$aTSbLvbJPqCVVaL5LuBmgO4DSecH.xILVWWU.j4NL6YoLeFVMAqoS"], ["admin", false], ["activation_digest", "$2a$10$U2vuBWX3V.4ScA1P0UP77eO1dXmSITk0KZ2UAZupWtLJQNGIN52Qu"]]
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (3.4ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.4ms)
+UserMailer#account_activation: processed outbound mail in 554.1ms
+Sent mail to caackermann@uc.cl (2553.5ms)
+Date: Sat, 27 May 2017 04:15:11 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928fd4f4232a_11ef719860518@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928fd4f3a861_11ef719860436";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928fd4f3a861_11ef719860436
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+http://localhost:3000/account_activations/ZtPcRhk_O599ja8x3DXJtw/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928fd4f3a861_11ef719860436
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="http://localhost:3000/account_activations/ZtPcRhk_O599ja8x3DXJtw/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928fd4f3a861_11ef719860436--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4473ms (ActiveRecord: 19.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:15:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 454ms (Views: 431.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/account_activations/ZtPcRhk_O599ja8x3DXJtw/edit?email=caackermann%40uc.cl" for 172.19.0.1 at 2017-05-27 04:15:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"caackermann@uc.cl", "id"=>"ZtPcRhk_O599ja8x3DXJtw"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "activated" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["activated", true], ["updated_at", 2017-05-27 04:15:35 UTC], ["id", 21]]
+  [1m[35m (13.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "activated_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:15:36 UTC], ["activated_at", 2017-05-27 04:15:35 UTC], ["id", 21]]
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/21
+Completed 302 Found in 1157ms (ActiveRecord: 30.9ms)
+
+
+Started GET "/users/21" for 172.19.0.1 at 2017-05-27 04:15:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 574ms (Views: 494.0ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-27 04:15:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iicUWnC8Hj2WzQxjkqn6LAqs4eQgEVaZmHdup4KeG4MoXXPRf/fSy7bHMgOgtp9IkHu9O8OhV2y31BRrV8483Q=="}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:15:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (45.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (9.1ms)
+Completed 200 OK in 493ms (Views: 472.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:15:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 410ms (Views: 385.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 04:15:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 421ms (Views: 397.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 04:15:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dmnbgPiso4W/PFJPZOAkr+7a2wE0knyrRbSJMmNPuE20TcrSrM7Om6CUX/euvvTQ+zGjBjT64RwbGkZpliKBUQ==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "reset_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["reset_digest", "$2a$10$af6o.ecP0CpWzFZPgzP1JOo3Upi3DfWbMI3EnMtQe6nNuKMnq8che"], ["updated_at", 2017-05-27 04:15:48 UTC], ["id", 21]]
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_sent_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:15:48 UTC], ["reset_sent_at", 2017-05-27 04:15:48 UTC], ["id", 21]]
+  [1m[35m (14.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (1.4ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.6ms)
+UserMailer#password_reset: processed outbound mail in 264.1ms
+Sent mail to caackermann@uc.cl (2486.0ms)
+Date: Sat, 27 May 2017 04:15:49 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928fd7582ac_11ef710c607e8@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928fd7570c9_11ef710c6066b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928fd7570c9_11ef710c6066b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Para resetear tu contrase=C3=B1a haz click en el siguiente link:
+
+http://localhost:3000/password_resets/ZWgRW3dBuw-QwpnamAZVmQ/edit?email=3D=
+caackermann%40uc.cl
+
+Este link expirar=C3=A1 en 2 horas
+
+Si no solicitaste resetear tu contrase=C3=B1a, ignora este mail.
+
+
+----==_mimepart_5928fd7570c9_11ef710c6066b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Cambiar de contrase=C3=B1a</h1>
+
+<p>Para resetear tu contrase=C3=B1a haz click al siguiente link:</p>
+
+<a href=3D"http://localhost:3000/password_resets/ZWgRW3dBuw-QwpnamAZVmQ/e=
+dit?email=3Dcaackermann%40uc.cl">Reset password</a>
+
+<p>Este link expirar=C3=A1 en 2 horas</p>
+
+<p>
+Si no solicitaste un cambio de contrase=C3=B1a, ignora este mensaje.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5928fd7570c9_11ef710c6066b--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2908ms (ActiveRecord: 38.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:15:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (58.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 599ms (Views: 567.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:17:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 382ms (Views: 360.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2017-05-27 04:17:22 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xlOo8UVdbAqp295pxKk6H83DztGZy2jkz/V6Rf1OWn3RBQEK0GFp89jtKzBeIhA47yKugln9DieqEzDTDPDsMA==", "session"=>{"email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/21
+Completed 302 Found in 101ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/21" for 172.19.0.1 at 2017-05-27 04:17:22 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (28.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 514ms (Views: 460.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/carrito" for 172.19.0.1 at 2017-05-27 04:17:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#carts_index as HTML
+  Rendering static_pages/carts_index.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mCart Load (0.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  Rendered static_pages/carts_index.html.erb within layouts/application (61.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 492ms (Views: 472.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:17:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (6.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (45.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 474ms (Views: 448.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articulos/11" for 172.19.0.1 at 2017-05-27 04:19:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered articulos/show.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 516ms (Views: 480.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:19:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (3.1ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (7.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (65.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+Completed 200 OK in 660ms (Views: 620.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/21" for 172.19.0.1 at 2017-05-27 04:19:27 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 457ms (Views: 421.9ms | ActiveRecord: 3.0ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", true], ["updated_at", 2017-05-27 04:20:08 UTC], ["id", 21]]
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/21" for 172.19.0.1 at 2017-05-27 04:20:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 504ms (Views: 474.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:20:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (6.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (41.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 488ms (Views: 464.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articulos/11/edit" for 172.19.0.1 at 2017-05-27 04:20:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticulo Load (1.4ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered articulos/_form.html.erb (12.8ms)
+  Rendered articulos/edit.html.erb within layouts/application (60.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 531ms (Views: 497.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:20:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (5.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 471ms (Views: 449.1ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-27 04:39:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HWk84C+si5rrIxmpvFpntjDBKfM5zT/SsvxPjpi0eDW/E1trIOdHbMspJ8mORQLSqhZ1LNp9PiedXzVCTeRfaw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:39:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (66.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 559ms (Views: 540.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:39:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 451ms (Views: 431.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 04:39:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 445ms (Views: 417.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 04:39:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JIK6ng4hOBvDZOG9n1TcVBiba8DEm1BV+0IsfzVyLlLmpqvMWkNVBdzM7AVVCgwrDXATx8TzzeKl7OMkwB8XTg==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "reset_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["reset_digest", "$2a$10$im8DTQQFBplfL/UjDfkLw.m8GD9RMTPb7mlkofDeKGFugw9T7POCy"], ["updated_at", 2017-05-27 04:39:17 UTC], ["id", 21]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_sent_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:39:17 UTC], ["reset_sent_at", 2017-05-27 04:39:17 UTC], ["id", 21]]
+  [1m[35m (14.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (1.5ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (1.2ms)
+UserMailer#password_reset: processed outbound mail in 234.9ms
+Sent mail to caackermann@uc.cl (3144.8ms)
+Date: Sat, 27 May 2017 04:39:18 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <592902f617d2c_11ef6e8c60988@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_592902f616f55_11ef6e8c608b0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_592902f616f55_11ef6e8c608b0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Para resetear tu contrase=C3=B1a haz click en el siguiente link:
+
+http://localhost:3000/password_resets/w1Fn25077bCpUPbBp8zfeg/edit?email=3D=
+caackermann%40uc.cl
+
+Este link expirar=C3=A1 en 2 horas
+
+Si no solicitaste resetear tu contrase=C3=B1a, ignora este mail.
+
+
+----==_mimepart_592902f616f55_11ef6e8c608b0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Cambiar de contrase=C3=B1a</h1>
+
+<p>Para resetear tu contrase=C3=B1a haz click al siguiente link:</p>
+
+<a href=3D"http://localhost:3000/password_resets/w1Fn25077bCpUPbBp8zfeg/e=
+dit?email=3Dcaackermann%40uc.cl">Reset password</a>
+
+<p>Este link expirar=C3=A1 en 2 horas</p>
+
+<p>
+Si no solicitaste un cambio de contrase=C3=B1a, ignora este mensaje.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_592902f616f55_11ef6e8c608b0--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3510ms (ActiveRecord: 29.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:39:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (5.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (62.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 517ms (Views: 495.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:40:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 423ms (Views: 400.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 04:40:29 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 605ms (Views: 554.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 04:40:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1sabJCMnRCJf6oB1WkStkiUZDG1GyC0IKaPEvXeM7dAU4op2d0UpPEBCjc2QGn3tMPJ0akagsL93DQvmguHUzA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "reset_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["reset_digest", "$2a$10$kviLGgHBw/H0WeFO2xPLuO5mS0brfYCtgvVdFjTJYEsYGYgryADtO"], ["updated_at", 2017-05-27 04:40:32 UTC], ["id", 21]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_sent_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:40:32 UTC], ["reset_sent_at", 2017-05-27 04:40:32 UTC], ["id", 21]]
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (2.6ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (1.2ms)
+UserMailer#password_reset: processed outbound mail in 287.3ms
+Sent mail to caackermann@uc.cl (2726.8ms)
+Date: Sat, 27 May 2017 04:40:33 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5929034128b1b_11ef710c611f5@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5929034127923_11ef710c610f6";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5929034127923_11ef710c610f6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Para resetear tu contrase=C3=B1a haz click en el siguiente link:
+
+http://localhost:3000/password_resets/lI1ZWTlbQ20ufyza3KSeTA/edit?email=3D=
+caackermann%40uc.cl
+
+Este link expirar=C3=A1 en 2 horas
+
+Si no solicitaste resetear tu contrase=C3=B1a, ignora este mail.
+
+
+----==_mimepart_5929034127923_11ef710c610f6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Cambiar de contrase=C3=B1a</h1>
+
+<p>Para resetear tu contrase=C3=B1a haz click al siguiente link:</p>
+
+<a href=3D"http://localhost:3000/password_resets/lI1ZWTlbQ20ufyza3KSeTA/e=
+dit?email=3Dcaackermann%40uc.cl">Reset password</a>
+
+<p>Este link expirar=C3=A1 en 2 horas</p>
+
+<p>
+Si no solicitaste un cambio de contrase=C3=B1a, ignora este mensaje.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5929034127923_11ef710c610f6--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3160ms (ActiveRecord: 36.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:40:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (51.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 583ms (Views: 560.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:40:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 589ms (Views: 564.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:41:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 439ms (Views: 411.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:41:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 419ms (Views: 385.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 04:41:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 560ms (Views: 512.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 04:41:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rpIG9fCFECmzozo2tsHL/I7vRLqAmWh0Lt9zFwHoEjJsthenpOd9N6wLN458nxuDmwQ8vYDx9cNwcbxM9IUrLg==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "reset_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["reset_digest", "$2a$10$GfE6i3vLQTvw9xYxkq8d.upt5KFuN4cQieuGByHxhwiBcY1302rYm"], ["updated_at", 2017-05-27 04:41:49 UTC], ["id", 21]]
+  [1m[35m (13.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_sent_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:41:49 UTC], ["reset_sent_at", 2017-05-27 04:41:49 UTC], ["id", 21]]
+  [1m[35m (18.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (2.2ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (5.7ms)
+UserMailer#password_reset: processed outbound mail in 212.3ms
+Sent mail to caackermann@uc.cl (3197.9ms)
+Date: Sat, 27 May 2017 04:41:49 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5929038de3b28_11ef710c613ef@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5929038de21ac_11ef710c61266";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5929038de21ac_11ef710c61266
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Para resetear tu contrase=C3=B1a haz click en el siguiente link:
+
+http://localhost:3000/password_resets/cg-6qUi8rqO8SLR4KVYb4g/edit?email=3D=
+caackermann%40uc.cl
+
+Este link expirar=C3=A1 en 2 horas
+
+Si no solicitaste resetear tu contrase=C3=B1a, ignora este mail.
+
+
+----==_mimepart_5929038de21ac_11ef710c61266
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Cambiar de contrase=C3=B1a</h1>
+
+<p>Para resetear tu contrase=C3=B1a haz click al siguiente link:</p>
+
+<a href=3D"http://localhost:3000/password_resets/cg-6qUi8rqO8SLR4KVYb4g/e=
+dit?email=3Dcaackermann%40uc.cl">Reset password</a>
+
+<p>Este link expirar=C3=A1 en 2 horas</p>
+
+<p>
+Si no solicitaste un cambio de contrase=C3=B1a, ignora este mensaje.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5929038de21ac_11ef710c61266--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3574ms (ActiveRecord: 35.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:41:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (47.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 478ms (Views: 441.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:42:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 480ms (Views: 453.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:42:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (45.3ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 510ms (Views: 453.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:42:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (37.0ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 505ms (Views: 462.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:42:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (40.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 530ms (Views: 500.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:42:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (1.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (5.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (53.2ms)
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:42:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (4.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (10.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (82.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 941ms (Views: 903.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:42:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (6.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (12.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (85.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 1208ms (Views: 1164.8ms | ActiveRecord: 4.4ms)
+
+
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 838ms (Views: 787.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:50:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (11.5ms)
+  [1m[36mArticulo Load (1.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (87.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (147.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 2013ms (Views: 1963.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:50:56 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (80.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 463ms (Views: 444.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 04:50:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 444ms (Views: 416.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 04:51:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MzbM22mk6OeWhCfDJ/xCcUTbOFqd4BXWl3sTPyjXB3vxEt2JPcaF+YksKnvtopIOUTBAXZ2IiGHJ1dxk3bo+Zw==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "reset_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["reset_digest", "$2a$10$9MBg5xwl1e9GG9hWWcZBhumxcl0/RL5xUU1vMOWnRKl7AMuv84WnO"], ["updated_at", 2017-05-27 04:51:02 UTC], ["id", 21]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_sent_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:51:02 UTC], ["reset_sent_at", 2017-05-27 04:51:02 UTC], ["id", 21]]
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (2.0ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.9ms)
+UserMailer#password_reset: processed outbound mail in 437.6ms
+Sent mail to caackermann@uc.cl (2957.0ms)
+Date: Sat, 27 May 2017 04:51:03 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <592905b76e9e6_11963164866a8@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_592905b768c52_119631648656e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_592905b768c52_119631648656e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Para resetear tu contrase=C3=B1a haz click en el siguiente link:
+
+http://localhost:3000/password_resets/Ruxm4uFjlYDYf5nh_tkLVg/edit?email=3D=
+caackermann%40uc.cl
+
+Este link expirar=C3=A1 en 2 horas
+
+Si no solicitaste resetear tu contrase=C3=B1a, ignora este mail.
+
+
+----==_mimepart_592905b768c52_119631648656e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Cambiar de contrase=C3=B1a</h1>
+
+<p>Para resetear tu contrase=C3=B1a haz click al siguiente link:</p>
+
+<a href=3D"http://localhost:3000/password_resets/Ruxm4uFjlYDYf5nh_tkLVg/e=
+dit?email=3Dcaackermann%40uc.cl">Reset password</a>
+
+<p>Este link expirar=C3=A1 en 2 horas</p>
+
+<p>
+Si no solicitaste un cambio de contrase=C3=B1a, ignora este mensaje.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_592905b768c52_119631648656e--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4328ms (ActiveRecord: 35.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:51:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (39.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 438ms (Views: 415.8ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35mSQL (16.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:52:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 345ms (Views: 323.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 04:52:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 374ms (Views: 348.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 04:52:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L1VLNtxgQjHPh92RxdB7aUTr4zl1Pkqy8jIYFi/ptMco15+nxD+IzjoM7PVPFiD+yBRvEyVi1o0RpYXkFISswg==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 04:52:34 UTC], ["updated_at", 2017-05-27 04:52:34 UTC], ["password_digest", "$2a$10$cGvRTOQXtmDZq3Wkt5NfPe5h6tTxoZu9owSSoRC71ln3Z9rxPCMP."], ["admin", false], ["activation_digest", "$2a$10$9c/GAKCBPbhxFwpiYhkW8.bXdJbQ5moeb3Tsb0A5BUGbDQD27dNpm"]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.5ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.8ms)
+UserMailer#account_activation: processed outbound mail in 185.9ms
+Sent mail to caackermann@uc.cl (2738.0ms)
+Date: Sat, 27 May 2017 04:52:34 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <592906125c982_119632e0868ae@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_592906125b9db_119632e08671f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_592906125b9db_119632e08671f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+http://localhost:3000/account_activations/7JMIdNDLaFMSFPABKA3V7g/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_592906125b9db_119632e08671f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="http://localhost:3000/account_activations/7JMIdNDLaFMSFPABKA3V7g/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_592906125b9db_119632e08671f--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3160ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:52:37 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (41.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 446ms (Views: 426.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/account_activations/7JMIdNDLaFMSFPABKA3V7g/edit?email=caackermann%40uc.cl" for 172.19.0.1 at 2017-05-27 04:55:22 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"caackermann@uc.cl", "id"=>"7JMIdNDLaFMSFPABKA3V7g"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "activated" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["activated", true], ["updated_at", 2017-05-27 04:55:22 UTC], ["id", 22]]
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "activated_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:55:22 UTC], ["activated_at", 2017-05-27 04:55:22 UTC], ["id", 22]]
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/22
+Completed 302 Found in 123ms (ActiveRecord: 31.1ms)
+
+
+Started GET "/users/22" for 172.19.0.1 at 2017-05-27 04:55:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 562ms (Views: 461.2ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-27 04:55:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aMURlgLQQDiFsSlURoXYhjYbjnU7SgsNJxea2sFigAnKv3YdDZuMzqW7FzR0mr3irMzSqtj6CvgItOAWFDKnVw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:55:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (38.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 404ms (Views: 388.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:55:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 361ms (Views: 336.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 172.19.0.1 at 2017-05-27 04:55:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 352ms (Views: 327.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 172.19.0.1 at 2017-05-27 04:55:56 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CD/qPrBQl4m1o+e6QHNhXwkCkGRQEZ+/y+FIJ+91JEzKG/ts5DL6l6oL6gKKLbEgHOnoY1B5AgiVT4d8GhgdUA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "reset_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["reset_digest", "$2a$10$90N5pA49VKdHbanN/zIJsuVrREZQx4VuKeu0wIj7lG50HrwPMOCf2"], ["updated_at", 2017-05-27 04:55:56 UTC], ["id", 22]]
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_sent_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 04:55:56 UTC], ["reset_sent_at", 2017-05-27 04:55:56 UTC], ["id", 22]]
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (1.4ms)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.9ms)
+UserMailer#password_reset: processed outbound mail in 156.2ms
+Sent mail to caackermann@uc.cl (3122.7ms)
+Date: Sat, 27 May 2017 04:55:56 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <592906dc84653_119633948709c@79e11f7772f2.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_592906dc835b5_1196339486939";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_592906dc835b5_1196339486939
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Para resetear tu contrase=C3=B1a haz click en el siguiente link:
+
+http://localhost:3000/password_resets/tA6tcvTN_YJeNJZd0wezhA/edit?email=3D=
+caackermann%40uc.cl
+
+Este link expirar=C3=A1 en 2 horas
+
+Si no solicitaste resetear tu contrase=C3=B1a, ignora este mail.
+
+
+----==_mimepart_592906dc835b5_1196339486939
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Cambiar de contrase=C3=B1a</h1>
+
+<p>Para resetear tu contrase=C3=B1a haz click al siguiente link:</p>
+
+<a href=3D"http://localhost:3000/password_resets/tA6tcvTN_YJeNJZd0wezhA/e=
+dit?email=3Dcaackermann%40uc.cl">Reset password</a>
+
+<p>Este link expirar=C3=A1 en 2 horas</p>
+
+<p>
+Si no solicitaste un cambio de contrase=C3=B1a, ignora este mensaje.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_592906dc835b5_1196339486939--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3403ms (ActiveRecord: 30.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:55:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (40.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 369ms (Views: 352.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/password_resets/tA6tcvTN_YJeNJZd0wezhA/edit?email=caackermann%40uc.cl" for 172.19.0.1 at 2017-05-27 04:56:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"caackermann@uc.cl", "id"=>"tA6tcvTN_YJeNJZd0wezhA"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (168.6ms)
+  Rendered password_resets/edit.html.erb within layouts/application (187.0ms)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `object' for #<#<Class:0x00000002dc3618>:0x007f2824d20ae8>):
+    1: <% if object.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(object.errors.count, "error") %>.
+  
+app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__4364022014737342738_69905196556700'
+app/views/password_resets/edit.html.erb:8:in `block in _app_views_password_resets_edit_html_erb___4413782444281102250_69905196583520'
+app/views/password_resets/edit.html.erb:7:in `_app_views_password_resets_edit_html_erb___4413782444281102250_69905196583520'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.0ms)
+Started GET "/password_resets/tA6tcvTN_YJeNJZd0wezhA/edit?email=caackermann%40uc.cl" for 172.19.0.1 at 2017-05-27 04:56:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"caackermann@uc.cl", "id"=>"tA6tcvTN_YJeNJZd0wezhA"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered password_resets/edit.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 513ms (Views: 408.4ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/password_resets/tA6tcvTN_YJeNJZd0wezhA" for 172.19.0.1 at 2017-05-27 04:56:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i//WLheknIW6RFVEhXMiuQvEeQ2qO7u8O87NozKXBCEphbGlGO9Qc5pOayS3bEfdkRMl0kmLukkUbbdv58cjfw==", "email"=>"caackermann@uc.cl", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update password", "id"=>"tA6tcvTN_YJeNJZd0wezhA"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) AND ("users"."id" != $2) LIMIT $3[0m  [["email", "caackermann@uc.cl"], ["id", 22], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["password_digest", "$2a$10$gWQPEFxSN/.Sax7.SO0SaegkkOcMLPcE9ON8KLa9kn0i.ijTpEE7a"], ["updated_at", 2017-05-27 04:57:00 UTC], ["id", 22]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/22
+Completed 302 Found in 181ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/users/22" for 172.19.0.1 at 2017-05-27 04:57:00 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 437ms (Views: 411.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/carrito" for 172.19.0.1 at 2017-05-27 04:58:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#carts_index as HTML
+  Rendering static_pages/carts_index.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCart Load (0.8ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  Rendered static_pages/carts_index.html.erb within layouts/application (51.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (6.3ms)
+Completed 200 OK in 379ms (Views: 365.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 04:59:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (7.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (38.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 390ms (Views: 363.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 04:59:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.3ms)
+Completed 200 OK in 370ms (Views: 348.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2017-05-27 04:59:57 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XHcHcfarD+9XR2Bnz92cIyK34gvnCO0RmG+x4OqCBR1LIa6KY5cKFiZxlT5VVrYEAFaCWCc+i9L9ift2GzyzUA==", "session"=>{"email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/22
+Completed 302 Found in 82ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/22" for 172.19.0.1 at 2017-05-27 04:59:57 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (23.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 384ms (Views: 361.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 05:00:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (5.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 345ms (Views: 323.8ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 05:00:58 UTC], ["admin", true], ["id", 22]]
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 172.19.0.1 at 2017-05-27 05:01:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (7.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (47.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 604ms (Views: 570.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/articulos/11" for 172.19.0.1 at 2017-05-27 05:01:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5IrfIahrPHV+EsPpxcSnDXM49Ozikj8GlHk/Bhw5wexG8LiqpyDwg14Y/Yn328Jp6e+oMwEiPvO72kXKyWnmsg==", "id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = $1[0m  [["id", 11]]
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 33ms (ActiveRecord: 18.2ms)
+
+
+Started GET "/articulos" for 172.19.0.1 at 2017-05-27 05:01:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  [1m[36mArticulo Load (1.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/index.html.erb within layouts/application (29.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 532ms (Views: 508.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 05:01:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (38.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 408ms (Views: 383.1ms | ActiveRecord: 1.0ms)
+
+

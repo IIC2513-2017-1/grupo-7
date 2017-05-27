@@ -1,26 +1,90 @@
-<p id="notice"><%= notice %></p>
 <%= render 'layouts/sidebar'%>
-<div class="wrapper">
-  <p class="page-title"><%= @articulo.name %></p>
-<div class='center'>
-  <p><strong>Stock:</strong><%= @articulo.stock %></p>
-  <p><strong>Precio:</strong><%= @articulo.precio %></p>
-  <p><strong>Descripcion:</strong><%= @articulo.descripcion %></p>
-  <p>Publicado hace <%= time_ago_in_words(@articulo.created_at) %></p>
-  <% if logged_in?%>
-    <%= form_for @cart do |f| %>
-      <%= flash[:danger] %>
-      <p><%= f.label :cantidad%><%= f.number_field :cantidad , value: 1%>
-      <%= f.submit 'Agregar al carro' %></p>
-      <%= f.hidden_field :articulo_id, value: @articulo.id %>
-      <%= f.hidden_field :user_id, value: current_user.id %>
-      <% end %>
-    <p><%= link_to "Ver Carro", carrito_path%>
-    <% if current_user.admin?%>
-      <%= link_to 'Editar Articulo', edit_articulo_path(@articulo) %></p>
-    <% else %>
-      </p>
-    <% end %>
-  <% end %>
-</div>
-</div>
+
+
+<articulopage>
+  <div class="wrapper">
+    <div id="product_layout_1">
+
+
+      <div class="top">
+      <div class="product_images">
+        <div class="product_image_1">
+          <img src="http://placehold.it/320x480" alt="">
+        </div>
+        </div>
+
+
+        <div class="product_info">
+          <h1><%= @articulo.name %></h1><br>
+
+          <div class="price">
+          <h2 class="sale_price">$<%= @articulo.precio %></h2><br><br>
+          </div>
+
+          <div class="rating">
+            <i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star-half-o fa-3x"></i><i class="fa fa-star-o fa-3x"></i>
+          </div>
+
+          <div class="product_description">
+          <p> <%= @articulo.descripcion %> </p>
+          </div>
+
+          <div class="related_info">
+           <span class="sku"> Publicado hace <%= time_ago_in_words(@articulo.created_at) %> </span>
+           </div>
+
+
+         <div class="options">
+
+
+          <div class="buying">
+                   <% if logged_in?%>
+                  <%= form_for @cart do |f| %>
+                    <%= flash[:danger] %>
+                    <div class="quantity">
+                    <%= f.label :cantidad%><%= f.number_field :cantidad , value: 1%>
+                    </div>
+                    <div class="cart">
+                    <%= f.submit 'Agregar al carro' %>
+                    <%= f.hidden_field :articulo_id, value: @articulo.id %>
+                    <%= f.hidden_field :user_id, value: current_user.id %>
+                    <% end %>
+                    </div>
+                    <div class="cart">
+                    <button class="btn btn-2 btn-sep icon-cart"><%= link_to "Ver Carro", carrito_path%></button>
+                   </div>
+                   <div class="cart">
+                   <% if current_user.admin?%>
+                    <%= link_to 'Editar Articulo', edit_articulo_path(@articulo) %>
+                   <% else %>
+                   <% end %>
+                   </div>
+                   <% end %>
+            </div>
+
+
+            </div>
+
+
+        </div>
+        </div>
+
+
+
+        <div class="bottom">
+        <div class="reviews">
+          <div class="head">
+            <h2>Comentarios</h2>
+          </div>
+            <div class="content">
+              <span class="name">Marty McFly</span><span class="stars"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star-half-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i></span>
+              <p class="review_text">"Check out that four by four. That is hot. Someday, Jennifer, someday. Wouldn't it be great to take that truck up to the lake. Throw a couple of sleeping bags in the back. Whoa, wait, Doc. Here you go, lady. There's a quarter. Well, it will just happen. Like the way I met your father"</p>
+              <span class="writeReview"><a href="#">Write your Own Review</a></span>
+            </div>
+          </div>
+          </div>
+
+
+      </div>
+   </div>
+   </articulopage>

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   root 'static_pages#home'
   get  '/about',   to: 'static_pages#about'
   get '/carrito', to: 'static_pages#carts_index'
@@ -12,4 +16,6 @@ Rails.application.routes.draw do
   resources :carts
   resources :users
   resources :articulos
+  resources :account_activations, only: [:edit]
+
 end

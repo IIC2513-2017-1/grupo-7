@@ -29140,3 +29140,1554 @@ app/controllers/articulos_controller.rb:55:in `destroy'
   Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
   Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (4.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddActivationToUsers (20170527011148)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.6ms)[0m  [1m[35mALTER TABLE "users" ADD "activation_digest" character varying[0m
+  [1m[35m (131.0ms)[0m  [1m[35mALTER TABLE "users" ADD "activated" boolean DEFAULT 'f'[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "users" ADD "activated_at" timestamp[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170527011148"]]
+  [1m[35m (21.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (17.7ms)[0m  [1m[31mDELETE FROM "carts"[0m
+  [1m[35mSQL (20.6ms)[0m  [1m[31mDELETE FROM "articulos"[0m
+  [1m[35mSQL (15.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-27 01:38:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (12.4ms)
+  [1m[36mArticulo Load (1.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (58.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (125.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 5158ms (Views: 5109.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 01:38:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (101.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 419ms (Views: 396.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 01:38:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 713ms (Views: 600.9ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 01:39:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wY6wmi31uIqAWiBN4F+NS812O+fjWvOR1shWMwL6+UHGDGQLNapydXXRESlqmdbcQYm3zbMGb641X8vBOZfhRA==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 01:39:09 UTC], ["updated_at", 2017-05-27 01:39:09 UTC], ["password_digest", "$2a$10$Zkz37qLop7tUlZ7t9CAk0eHqX61LvZejPKy7HN1mdUIEuPEmlVkvC"], ["admin", false], ["activation_digest", "$2a$10$3YIPBEMKdjxxH8Bm5ehs1OjJuni1TqrfpS.L1hxdwAAUjTvhWlxVK"]]
+  [1m[35m (15.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (36.5ms)
+UserMailer#account_activation: processed outbound mail in 203.0ms
+Completed 500 Internal Server Error in 1681ms (ActiveRecord: 29.3ms)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+     6: Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+     7: </p>
+     8: 
+     9: <%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+    10:                                                     email: @user.email) %>
+  
+app/views/user_mailer/account_activation.html.erb:9:in `_app_views_user_mailer_account_activation_html_erb___3103141649538221450_69815720820980'
+app/mailers/user_mailer.rb:10:in `account_activation'
+app/controllers/users_controller.rb:28:in `create'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.2ms)
+Started GET "/" for 172.19.0.1 at 2017-05-27 01:45:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (9.6ms)
+  [1m[36mArticulo Load (1.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (71.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (132.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 1590ms (Views: 1548.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 01:45:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (96.4ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 515ms (Views: 429.8ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 01:45:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GLxCn1WR8BkTKk4CXoQr5g7MTlXHxxtf4zjmkpLiaacfPpYOTc465uahf2bUQnBxgjPCf5ebh2AAr3tgqY9xog==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (26.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 521ms (Views: 376.9ms | ActiveRecord: 3.3ms)
+
+
+  [1m[35mSQL (16.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started POST "/users" for 172.19.0.1 at 2017-05-27 01:46:24 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rtFibUy5qLVQNC6yK0cpt35JoxThZaJGRZlYT3zNKxMMqwXmQ/JkQ3A+ENIZWEzT5J7/ywLVo7NqOiKDqZ0MTQ==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 01:46:24 UTC], ["updated_at", 2017-05-27 01:46:24 UTC], ["password_digest", "$2a$10$TsblZyyMSgyIzaoZGeSwDu5RkFM2RIn0jutKb9TvPsSF86ICioN2W"], ["admin", false], ["activation_digest", "$2a$10$690blBa/ZAJnB2dGUw1LeumBDVKslk8CgSk3fxZQ2273zWRHKIInO"]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.5ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.8ms)
+UserMailer#account_activation: processed outbound mail in 496.0ms
+Sent mail to caackermann@uc.cl (48.4ms)
+Date: Sat, 27 May 2017 01:46:26 +0000
+From: admin@smartbuy.com
+To: caackermann@uc.cl
+Message-ID: <5928da725cb96_11bfdbb816847@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928da7254172_11bfdbb8167d0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928da7254172_11bfdbb8167d0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/oq2vTYzMjDNuk_9rCcZhlQ/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928da7254172_11bfdbb8167d0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/oq2vTYzMjDNuk_9rCcZhlQ/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928da7254172_11bfdbb8167d0--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1516ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 01:46:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (1.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (39.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 358ms (Views: 338.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 01:47:24 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 336ms (Views: 313.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2017-05-27 01:47:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LyGe6+6GXkZ9vtvaMD6GWJmHUrwR9PfAjSTfTVjCZ884dzcQe7pbvwyILoOqtax/u2Yy79HCkQPowpXbqXzRgg==", "session"=>{"email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 104ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 01:47:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (5.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 403ms (Views: 384.4ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35mSQL (14.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/login" for 172.19.0.1 at 2017-05-27 02:00:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 422ms (Views: 400.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:00:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (20.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 387ms (Views: 315.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:01:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HeXLl5Z0ZzAHgyCApD34wKqZ/jo2UX+THBjpA5GSkEQaZx8Gjiutz/IIEeQu+6NXJmZyEGYN46z/j3Txqv+IQQ==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:01:01 UTC], ["updated_at", 2017-05-27 02:01:01 UTC], ["password_digest", "$2a$10$7CHLQP2lyarMZsj9Op7Qvu/0D31FB/cN1pzWWnRlAWDr76sjqw8Oa"], ["admin", false], ["activation_digest", "$2a$10$sJUujCa0fakrZevczXnAmucSvd.TVHESHJdKzeFyTSaUfFkTHGrv."]]
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.9ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.9ms)
+UserMailer#account_activation: processed outbound mail in 188.9ms
+Sent mail to caackermann@uc.cl (3.2ms)
+Date: Sat, 27 May 2017 02:01:02 +0000
+From: admin@smartbuy.com
+To: caackermann@uc.cl
+Message-ID: <5928ddde119a3_11bfdbb81708e@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928ddde107ef_11bfdbb8169ef";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928ddde107ef_11bfdbb8169ef
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/czVBiknKix6jE46OeRpR0A/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928ddde107ef_11bfdbb8169ef
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/czVBiknKix6jE46OeRpR0A/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928ddde107ef_11bfdbb8169ef--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 445ms (ActiveRecord: 17.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:01:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (57.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (98.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 447ms (Views: 422.2ms | ActiveRecord: 3.0ms)
+
+
+  [1m[35mSQL (12.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:15:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (25.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 487ms (Views: 417.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:15:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D338pH6osi1UCrQnHFq18gKgPqJGxjdJ6JGay1jg3PsI/yg1Zvd40qGBhUOWnO5ljl+yiBaaq3YLBgc5Y43E/g==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:15:45 UTC], ["updated_at", 2017-05-27 02:15:45 UTC], ["password_digest", "$2a$10$bmR7qwpQLySdSHtdMCjB8eJVWLVrwxqDkM/qDA4d0mlFNpz.1JTR."], ["admin", false], ["activation_digest", "$2a$10$ciBSr0IFgjICq5IJ7bNMJO2NIfUububIa3FBctuDMeyWdrSystVWC"]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.3ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.9ms)
+UserMailer#account_activation: processed outbound mail in 188.8ms
+Sent mail to caackermann@uc.cl (2.9ms)
+Date: Sat, 27 May 2017 02:15:45 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e151d896a_11bfdd841722d@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e151d7bc1_11bfdd841712a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e151d7bc1_11bfdd841712a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/93ML91E9dWQxfKQJ_NRZzQ/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e151d7bc1_11bfdd841712a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/93ML91E9dWQxfKQJ_NRZzQ/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e151d7bc1_11bfdd841712a--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 429ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:15:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (38.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (75.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 432ms (Views: 409.4ms | ActiveRecord: 2.1ms)
+
+
+  [1m[35mSQL (15.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:22:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 470ms (Views: 400.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:22:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sJta8cMh3C4367/kFrqq6NoXRlO13JZjZITZEPbAmq+3GY5g234W0cJgjoCcfPF/VujKeeWAClyHE0Tiza2Cqg==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:22:18 UTC], ["updated_at", 2017-05-27 02:22:18 UTC], ["password_digest", "$2a$10$cZOt1AnpTrnw.Of3yMhL2eMmRTAWzt.Sa3z1ZCpnXos0z1o7e5CDK"], ["admin", false], ["activation_digest", "$2a$10$UXW7RH6NPu38VKNYZUBYH.fEYrZz5RBoOdRHiofe0EpKaX.mC3qu."]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.4ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.8ms)
+UserMailer#account_activation: processed outbound mail in 185.4ms
+Sent mail to caackermann@uc.cl (4.3ms)
+Date: Sat, 27 May 2017 02:22:18 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e2dac9313_11bfdbb817455@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e2dac85b2_11bfdbb817324";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e2dac85b2_11bfdbb817324
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/X5yYcPDRIFoSOsAaFGnfXA/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e2dac85b2_11bfdbb817324
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/X5yYcPDRIFoSOsAaFGnfXA/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e2dac85b2_11bfdbb817324--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 433ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:22:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (49.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (88.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 456ms (Views: 435.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35mSQL (16.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:32:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 523ms (Views: 471.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:32:24 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cztFuWLmQPmsDJ6f1ivU2XW05D28ZSCVuv1eFmdPF/Z0uZEoermKBlmHr/tc7Y9O+UtoF+w5vKpZasPkXCIP8w==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:32:24 UTC], ["updated_at", 2017-05-27 02:32:24 UTC], ["password_digest", "$2a$10$WxuYP6Wgq3zBFg1MVTS6e.ACaFE2iY5CaK6FgF41r4YkXxrypzFT2"], ["admin", false], ["activation_digest", "$2a$10$LOUs4Mf/XKCSNr.im7gOt.tKMPOqkXZWL2G8dr46KoF3DEoZXfD/6"]]
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.1ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.0ms)
+UserMailer#account_activation: processed outbound mail in 257.2ms
+Sent mail to caackermann@uc.cl (4.0ms)
+Date: Sat, 27 May 2017 02:32:24 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e538a0fff_11bfdd84176d9@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e5389f981_11bfdd8417547";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e5389f981_11bfdd8417547
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/SnvLWP1y1eqZz73P_ko6Ag/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e5389f981_11bfdd8417547
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/SnvLWP1y1eqZz73P_ko6Ag/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e5389f981_11bfdd8417547--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 459ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:32:24 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (49.6ms)
+  Rendered layouts/_shim.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 703ms (Views: 666.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:40:56 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (119.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 2356ms (Views: 2201.4ms | ActiveRecord: 4.6ms)
+
+
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35mSQL (15.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:41:45 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dd1YVLYvJCIE8IP2WtJFBXbpQXNdH0HxO/286499uTRyX4zFrnDu3fF7spLQFB6S+hbNWQ1D3c7YaiEZtBChMQ==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:41:45 UTC], ["updated_at", 2017-05-27 02:41:45 UTC], ["password_digest", "$2a$10$fCwTCxLnMv4IKjRCzndea..UgnD08.Ykn5frk/ON9EgxNx5ATVOP2"], ["admin", false], ["activation_digest", "$2a$10$Akw1CG6WNyLYWRcDBpFUWe3YKXTcCtCnM6syzJq7JJrdZhxF/0eU6"]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.5ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.8ms)
+UserMailer#account_activation: processed outbound mail in 728.0ms
+Sent mail to caackermann@uc.cl (3040.3ms)
+Date: Sat, 27 May 2017 02:41:47 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e76b6e790_1bf49ec669a8@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e76b66e15_1bf49ec66860";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e76b66e15_1bf49ec66860
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/lg3jSfJcNaitmpQ_t9Il8A/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e76b66e15_1bf49ec66860
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/lg3jSfJcNaitmpQ_t9Il8A/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e76b66e15_1bf49ec66860--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 5363ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:41:50 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (1.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (58.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (100.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 755ms (Views: 727.6ms | ActiveRecord: 3.1ms)
+
+
+  [1m[35mSQL (14.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:42:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 426ms (Views: 403.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:43:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qS0ICQXGfeVWxjrv/H7BrFJJgY3q00rm9G/LVKrrnqyur9yYHZm3GqNNC4t2uJo73rYNp7qP1tkX+FamkYaGqQ==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:43:09 UTC], ["updated_at", 2017-05-27 02:43:09 UTC], ["password_digest", "$2a$10$AGjGHJoO2OL8HX6NQodvC.CNDdgz1SQ4e23iFquYxM0aqtaOdADb6"], ["admin", false], ["activation_digest", "$2a$10$uujJwDjW4fh4tMtYP.KWzO4zDJsre1TrB1N7fRFS9.f6HQ53I3mBG"]]
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.9ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.3ms)
+UserMailer#account_activation: processed outbound mail in 230.7ms
+Sent mail to caackermann@uc.cl (3715.3ms)
+Date: Sat, 27 May 2017 02:43:09 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e7bdaeca4_1bf47e467195@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e7bdabc4a_1bf47e467010";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e7bdabc4a_1bf47e467010
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+https://localhost:3000/account_activations/Rz7SLDJNerbgdyl7ZHYNgA/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e7bdabc4a_1bf47e467010
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/Rz7SLDJNerbgdyl7ZHYNgA/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e7bdabc4a_1bf47e467010--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4145ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:43:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (2.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 511ms (Views: 490.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/account_activations/Rz7SLDJNerbgdyl7ZHYNgA/edit?email=caackermann%40uc.cl" for 172.19.0.1 at 2017-05-27 02:43:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"caackermann@uc.cl", "id"=>"Rz7SLDJNerbgdyl7ZHYNgA"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "activated" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["activated", true], ["updated_at", 2017-05-27 02:43:31 UTC], ["id", 14]]
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "activated_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 02:43:31 UTC], ["activated_at", 2017-05-27 02:43:31 UTC], ["id", 14]]
+  [1m[35m (14.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/14
+Completed 302 Found in 149ms (ActiveRecord: 34.3ms)
+
+
+Started GET "/users/14" for 172.19.0.1 at 2017-05-27 02:43:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 588ms (Views: 497.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:44:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (13.4ms)
+  [1m[36mArticulo Load (1.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (76.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (251.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 2222ms (Views: 2154.4ms | ActiveRecord: 11.0ms)
+
+
+Started DELETE "/logout" for 172.19.0.1 at 2017-05-27 02:44:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q3ztJsl6rQVhkCwj16lJ//jMYnAE+/BbxK5qycaicnMJBoqtxjFh80GaEkPltiybYhs+r+dL8a7rDRAFE/JVLQ=="}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:44:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (54.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 492ms (Views: 474.4ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35mSQL (16.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:45:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (76.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 515ms (Views: 493.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:45:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZqOsv06wxqNL6T30YHcvBNEZtRwLuTk9dzDQTfPwVXNhIXguVu8MXL5iDJDqsXSTXeY5NlvlpQKUp02/yJ1Ndg==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:45:13 UTC], ["updated_at", 2017-05-27 02:45:13 UTC], ["password_digest", "$2a$10$Bx0RPuoJNDOQwAg8YvFkFeZOYco2bFsBcILbulITkfT2l/GwH7YSm"], ["admin", false], ["activation_digest", "$2a$10$m2DY/ZpBZDcshC9Kqsy.Ju/2GsUaqrv7GDEWM6UzMcinWtG0FAejW"]]
+  [1m[35m (16.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.1ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.7ms)
+UserMailer#account_activation: processed outbound mail in 801.9ms
+Sent mail to caackermann@uc.cl (2328.8ms)
+Date: Sat, 27 May 2017 02:45:15 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e83b59995_110bc3d062618@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e83b444f0_110bc3d062567";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e83b444f0_110bc3d062567
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+http://localhost:3000/account_activations/0XtdHhncghwPXXrxW540MA/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e83b444f0_110bc3d062567
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="http://localhost:3000/account_activations/0XtdHhncghwPXXrxW540MA/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e83b444f0_110bc3d062567--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4737ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:45:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (46.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 565ms (Views: 542.2ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35mSQL (16.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:48:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (2.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (32.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 468ms (Views: 446.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:48:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (56.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 477ms (Views: 438.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:48:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 750ms (Views: 723.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:49:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iASLPPE4bYOCtp9v4m4cxF6Pj6ubUl3ojNfP6CtYAYOPhl+t6WenfHc9rgtoqEdT0nADgcsOwddvQFIaEDUZhg==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:49:14 UTC], ["updated_at", 2017-05-27 02:49:14 UTC], ["password_digest", "$2a$10$IQQ08ks5.ABvddnQzOY6guFnSr31Yw1q/V11WgweoFY0AEBJuI6B2"], ["admin", false], ["activation_digest", "$2a$10$GtKBXoQE5miB5l.cSgVcPe3trCHDrYz5TjJl3Vhnqejs.OH0.UTzS"]]
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.6ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.4ms)
+UserMailer#account_activation: processed outbound mail in 204.8ms
+Sent mail to caackermann@uc.cl (2526.9ms)
+Date: Sat, 27 May 2017 02:49:14 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e92a91477_110b5cc4628d0@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e92a8ffaa_110b5cc46273a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e92a8ffaa_110b5cc46273a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+http://localhost:3000/account_activations/Ky4VpDkm6mnjEYVc4RWApQ/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e92a8ffaa_110b5cc46273a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="http://localhost:3000/account_activations/Ky4VpDkm6mnjEYVc4RWApQ/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e92a8ffaa_110b5cc46273a--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2936ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:49:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (43.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 460ms (Views: 444.4ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35mSQL (14.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:51:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (122.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+Completed 200 OK in 2478ms (Views: 2359.0ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:51:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XAOv/NEzaKvwGhxkImnFovwQNUC8CzbpgeqYYGkiDRhbgXttyWyiVAWRLQCor541cO+5auxXqtZifQWSUk8VHQ==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:51:17 UTC], ["updated_at", 2017-05-27 02:51:17 UTC], ["password_digest", "$2a$10$c6rcRlTZatZvzNjgzwWrN.F03aRwRC1QSt8p2B/JWBxO.3woDqM22"], ["admin", false], ["activation_digest", "$2a$10$1RX4jlhQnuYTp1Su3waIRugsH2yB8PC5IUDfySJoTSSIUJhW9EIpa"]]
+  [1m[35m (21.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.4ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.1ms)
+UserMailer#account_activation: processed outbound mail in 638.9ms
+Sent mail to caackermann@uc.cl (3038.2ms)
+Date: Sat, 27 May 2017 02:51:19 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928e9a7abf14_1209f4b435931@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928e9a7a53eb_1209f4b435819";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928e9a7a53eb_1209f4b435819
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+http://localhost:3000/account_activations/PlLdUjK2aC7GvbuEyUrRdg/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928e9a7a53eb_1209f4b435819
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="http://localhost:3000/account_activations/PlLdUjK2aC7GvbuEyUrRdg/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928e9a7a53eb_1209f4b435819--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4882ms (ActiveRecord: 27.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:51:22 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (1.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (81.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (128.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 542ms (Views: 516.8ms | ActiveRecord: 6.6ms)
+
+
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35mSQL (17.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/signup" for 172.19.0.1 at 2017-05-27 02:54:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 536ms (Views: 512.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.19.0.1 at 2017-05-27 02:54:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pkBBEBZj/cRUD5Po6i1Xa3MhAwKgSLd5t7F2SYc7VtmhwpWBDjw3O6GEooxg6wz8/96PKPAUK0ZUJuu7vFZO3A==", "user"=>{"name"=>"Christian Ackermann", "email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christian Ackermann"], ["email", "caackermann@uc.cl"], ["created_at", 2017-05-27 02:54:51 UTC], ["updated_at", 2017-05-27 02:54:51 UTC], ["password_digest", "$2a$10$z70WAs0O/JHmrTnksctaqO6kvdDWx.LqeSWZHGpSyzCN4TZaHXu9W"], ["admin", false], ["activation_digest", "$2a$10$0ZoIvb70dUVon3/JLeEtz.ypyR37mi0glyaQKFScpUg3tIvUkZprK"]]
+  [1m[35m (14.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.9ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (1.0ms)
+UserMailer#account_activation: processed outbound mail in 221.0ms
+Sent mail to caackermann@uc.cl (3263.5ms)
+Date: Sat, 27 May 2017 02:54:51 +0000
+From: smartbuyapp1@gmail.com
+To: caackermann@uc.cl
+Message-ID: <5928ea7b93a3d_1209f3883612c@79e11f7772f2.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5928ea7b92773_1209f38836077";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5928ea7b92773_1209f38836077
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola Christian Ackermann,
+
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+http://localhost:3000/account_activations/_uVFPZGiWQoJo57l67JV3w/edit?email=caackermann%40uc.cl
+
+
+----==_mimepart_5928ea7b92773_1209f38836077
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>SmartBuy</h1>
+
+<p>Hola Christian Ackermann,</p>
+
+<p>
+Bienvenido a SmartBuy. Haz click en el siguiente link para activar tu cuenta:
+</p>
+
+<a href="http://localhost:3000/account_activations/_uVFPZGiWQoJo57l67JV3w/edit?email=caackermann%40uc.cl">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_5928ea7b92773_1209f38836077--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3694ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 02:54:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (69.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 477ms (Views: 459.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/account_activations/_uVFPZGiWQoJo57l67JV3w/edit?email=caackermann%40uc.cl" for 172.19.0.1 at 2017-05-27 02:55:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"caackermann@uc.cl", "id"=>"_uVFPZGiWQoJo57l67JV3w"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "activated" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["activated", true], ["updated_at", 2017-05-27 02:55:19 UTC], ["id", 18]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "activated_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 02:55:19 UTC], ["activated_at", 2017-05-27 02:55:19 UTC], ["id", 18]]
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/18
+Completed 302 Found in 159ms (ActiveRecord: 30.8ms)
+
+
+Started GET "/users/18" for 172.19.0.1 at 2017-05-27 02:55:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (32.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 697ms (Views: 576.3ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) AND ("users"."id" != $2) LIMIT $3[0m  [["email", "caackermann@uc.cl"], ["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) AND ("users"."id" != $2) LIMIT $3[0m  [["email", "caackermann@uc.cl"], ["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) AND ("users"."id" != $2) LIMIT $3[0m  [["email", "caackermann@uc.cl"], ["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2017-05-27 03:07:42 UTC], ["admin", true], ["id", 18]]
+  [1m[35m (14.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/login" for 172.19.0.1 at 2017-05-27 03:31:00 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (77.6ms)
+Completed 200 OK in 3761ms (Views: 3733.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2017-05-27 03:31:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (7.3ms)
+Completed 200 OK in 512ms (Views: 488.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2017-05-27 03:31:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uFJ2SI6wgRUimPBsJ0JX00eOBk3ggCaCdV/GJUOfLZ4aKBHDgftN4wKSzgwVXTK33VlakgMwJ3da/Lzpls8KwA==", "session"=>{"email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `redirect_back_or' for #<SessionsController:0x007ff809c5aab8>):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.8ms)
+Started POST "/login" for 172.19.0.1 at 2017-05-27 03:32:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uFJ2SI6wgRUimPBsJ0JX00eOBk3ggCaCdV/GJUOfLZ4aKBHDgftN4wKSzgwVXTK33VlakgMwJ3da/Lzpls8KwA==", "session"=>{"email"=>"caackermann@uc.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caackermann@uc.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/18
+Completed 302 Found in 188ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/users/18" for 172.19.0.1 at 2017-05-27 03:32:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 675ms (Views: 595.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:32:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  [1m[36mArticulo Load (1.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (42.7ms)
+  Rendered layouts/_shim.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 611ms (Views: 586.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-27 03:32:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered shared/_articulos_form.html.erb (36.9ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (104.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 549ms (Views: 485.1ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/articulos" for 172.19.0.1 at 2017-05-27 03:32:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LE26ShyFOQQtAfRNVBAiq7RoaOTFfnNZXosJxzCIUcr/8LYFDp2VhgoprMkXivYC+/25JTZaT/aR4PqtJ29SBQ==", "articulo"=>{"name"=>"Macbook Pro", "precio"=>"599990", "stock"=>"20", "descripcion"=>"un pc muy bueno"}, "commit"=>"Crear"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[32mINSERT INTO "articulos" ("name", "user_id", "stock", "precio", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Macbook Pro"], ["user_id", 18], ["stock", 20], ["precio", 599990], ["descripcion", "un pc muy bueno"], ["created_at", 2017-05-27 03:32:36 UTC], ["updated_at", 2017-05-27 03:32:36 UTC]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 45ms (ActiveRecord: 18.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:32:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  [1m[36mArticulo Load (1.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (13.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (68.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 664ms (Views: 620.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/articulos/11" for 172.19.0.1 at 2017-05-27 03:32:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticulo Load (1.4ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered articulos/show.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 644ms (Views: 541.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/articulos/11" for 172.19.0.1 at 2017-05-27 03:33:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticulo Load (1.3ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered articulos/show.html.erb within layouts/application (28.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 632ms (Views: 582.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:35:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (7.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (75.9ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 514ms (Views: 490.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/18" for 172.19.0.1 at 2017-05-27 03:35:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 477ms (Views: 447.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-27 03:35:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (7.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (39.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+Completed 200 OK in 531ms (Views: 498.8ms | ActiveRecord: 1.2ms)
+
+

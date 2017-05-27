@@ -423,3 +423,171 @@ div.startingPrice {
 }
 
 }
+articulopage {
+  background: #efefef;
+  font-family: "Arial" sans-serif;
+  font-size: 62.5%;
+
+h1 {
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+#wrap {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#product_layout_1 {
+  margin-top: 30px;
+}
+
+#product_layout_1 .top {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#product_layout_1 .bottom {
+
+  width: 100%;
+  padding-top: 30px;
+  clear: both;
+}
+
+#product_layout_1 .product_images {
+  width: 30%;
+  max-width: 320px;
+  float: left;
+}
+
+#product_layout_1 .product_info {
+  width: 64%;
+  float: left;
+  margin-left: 4%;
+  text-align: center;
+  border: 2px solid #aaa;
+  background-color: #565695;
+}
+
+#product_layout_1 .product_images .product_image_1 {
+  width: 100%;
+  border: 2px solid lightgray;
+  border-radius: 3px;
+}
+
+
+#product_layout_1 .product_info h1 {
+  font-size: 3.6em;
+  line-height: .8;
+}
+
+#product_layout_1 .product_info .price {
+  margin-top: -40px;
+}
+
+
+#product_layout_1 .product_info .sale_price {
+  color: #b30000;
+  font-size: 3.2em;
+  display: inline-block;
+  width: 30%;
+}
+
+#product_layout_1 .product_info .rating {
+  margin-top: -20px;
+  color: goldenrod;
+}
+
+#product_layout_1 .product_info .product_description {
+  font-size: 1.4em;
+}
+
+
+
+#product_layout_1 .product_info .options {
+  margin-top: 30px;
+}
+
+
+
+#product_layout_1 .product_info .buying {
+  width: 45%;
+  margin: auto;
+}
+
+
+
+#product_layout_1 .product_info .buying .quantity {
+  font-size: 2em;
+  margin-top: 15px;
+  width: 100%;
+  display: block;
+}
+
+
+#product_layout_1 .product_info .buying .cart {
+  margin-top: 25px;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+
+#product_layout_1 .reviews {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+#product_layout_1 .reviews h2 {
+  font-weight: 500;
+  font-size: 2.4em;
+}
+
+#product_layout_1 .reviews .head {
+  background: #ccc;
+  text-align: center;
+  padding: 5px;
+}
+
+#product_layout_1 .reviews .content {
+  background: #FFF;
+  padding-top: 15px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 15px;
+}
+
+#product_layout_1 .reviews .content .name {
+  font-size: 1.8em;
+}
+
+#product_layout_1 .reviews .content .stars {
+  color: goldenrod;
+  margin-left: 15px;
+}
+
+#product_layout_1 .reviews .content .review_text {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+#product_layout_1 .reviews .content .fullReview a {
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  color: #006bff;
+  text-decoration: none;
+}
+
+
+
+
+}

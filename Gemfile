@@ -20,7 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 
 gem 'bcrypt',   '~> 3.1.11'
-
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 4.3'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

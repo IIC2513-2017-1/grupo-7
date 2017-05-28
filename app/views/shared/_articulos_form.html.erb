@@ -13,9 +13,11 @@
       <%= f.label :stock %>
       <%= f.number_field :stock %>
       <%= f.label :categoria %>
-      <%= f.text_field :categoria %>
+      <%= f.select :categoria, options_for_select(["tecnologia", "hombre", "mujer", "calzado", "deporte", "accesorios", "outdoor"])%>
       <%= f.label :descripcion %>
       <%= f.text_area :descripcion, placeholder: "Agrega una descripcion...", :rows=> 10, :cols=>50 %>
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
     <br><br>
     <%= f.submit "Crear", class: "btn btn-primary" %>
     <br><br>

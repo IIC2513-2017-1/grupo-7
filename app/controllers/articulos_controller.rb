@@ -71,7 +71,7 @@ class ArticulosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def articulo_params
-      params.require(:articulo).permit(:name, :precio, :stock, :descripcion, :categoria)
+      params.require(:articulo).permit(:name, :precio, :stock, :descripcion, :categoria, :image)
     end
 
     def destroy_comments

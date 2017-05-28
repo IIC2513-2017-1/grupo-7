@@ -3,7 +3,34 @@
 <div class='wrapper'>
 <% if logged_in? %>
   <% if current_user.admin? %>
-    <%= render 'form', articulo: @articulo %>
+  <%= form_for(@articulo) do |f| %>
+
+
+    <div class="basic-form">
+      <p class="page-title">Editar Articulo</p>
+      <%= f.label :name, "Nombre" %>
+      <%= f.text_field :name %>
+
+      <%= f.label :stock %>
+      <%= f.number_field :stock %>
+
+      <%= f.label :precio %>
+      <%= f.number_field :precio %>
+
+      <%= f.label :descripcion %>
+      <%= f.text_area :descripcion %>
+
+      <%= f.label :categoria%>
+      <%= f.select :categoria, options_for_select(["tecnologia", "hombre", "mujer", "calzado", "deporte", "accesorios", "outdoor"])%>
+
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
+      <br><br>
+      <%= f.submit "Guardar Cambios" %>
+      <br><br>
+  <% end %>
+  </div>
+
   <% end %>
   <%= link_to 'Ver Articulo', @articulo %>
 <% end %>

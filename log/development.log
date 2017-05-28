@@ -36075,3 +36075,1067 @@ Completed 200 OK in 421ms (Views: 396.1ms | ActiveRecord: 1.1ms)
 
 
   [1m[36mComentario Load (0.9ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:34:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (38.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 3267ms (Views: 3241.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/22" for 172.19.0.1 at 2017-05-28 01:35:03 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 375ms (Views: 343.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:35:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (50.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 384ms (Views: 358.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:35:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (37.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 386ms (Views: 357.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:35:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (39.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 407ms (Views: 385.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/22" for 172.19.0.1 at 2017-05-28 01:35:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 409ms (Views: 370.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 01:35:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered shared/_articulos_form.html.erb (21.3ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (56.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 569ms (Views: 537.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:37:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 432ms (Views: 400.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 01:37:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_articulos_form.html.erb (20.0ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (51.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 497ms (Views: 463.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/articulos" for 172.19.0.1 at 2017-05-28 01:37:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zYqTA6RCbZrn5TD9UN3TMOD9cTxuVufL+xjeFj3wYeAeN59MtlrBGMDNaHkTRweZr2ig/Z1y22Q0cy18KhdiLw==", "articulo"=>{"name"=>"caca", "precio"=>"1", "stock"=>"1", "categoria"=>"caca", "descripcion"=>"ascas"}, "commit"=>"Crear"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "articulos" ("name", "user_id", "stock", "precio", "descripcion", "created_at", "updated_at", "categoria") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "caca"], ["user_id", 22], ["stock", 1], ["precio", 1], ["descripcion", "ascas"], ["created_at", 2017-05-28 01:37:41 UTC], ["updated_at", 2017-05-28 01:37:41 UTC], ["categoria", "caca"]]
+  [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:37:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (6.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 413ms (Views: 393.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/articulos/19" for 172.19.0.1 at 2017-05-28 01:39:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zhpjXHbWLa4qv5ir2KdjH/9IM1pDB1T/hyBU77JM7Z1sYATXeZ3hWAq1psvquAZ7ZZ9vhaC3VQqogy4jZxzKww==", "id"=>"19"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mArticulo Load (1.2ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts" WHERE "carts"."articulo_id" = $1[0m  [["articulo_id", 19]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "19"]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = $1[0m  [["id", 19]]
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 37ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/articulos" for 172.19.0.1 at 2017-05-28 01:39:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  [1m[36mArticulo Load (1.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/index.html.erb within layouts/application (34.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 588ms (Views: 558.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/articulos/new" for 172.19.0.1 at 2017-05-28 01:39:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/_form.html.erb (23.0ms)
+  Rendered articulos/new.html.erb within layouts/application (71.9ms)
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Articulo:0x007f8b91edb678>):
+    27: 
+    28:     <%= f.label :categoria%>
+    29:     <%= f.text_area :categoria%>
+    30:     <%= gravatar_for articulo %>
+    31:           <a href="http://gravatar.com/emails" target="_blank">change</a>
+    32:     <br><br>
+    33:     <%= f.submit "Guardar Cambios" %>
+  
+app/helpers/users_helper.rb:5:in `gravatar_for'
+app/views/articulos/_form.html.erb:30:in `block in _app_views_articulos__form_html_erb___3172368418756050263_70118712630660'
+app/views/articulos/_form.html.erb:1:in `_app_views_articulos__form_html_erb___3172368418756050263_70118712630660'
+app/views/articulos/new.html.erb:5:in `_app_views_articulos_new_html_erb___431362600008619435_70118712714540'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.6ms)
+Started GET "/articulos/new" for 172.19.0.1 at 2017-05-28 01:39:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/_form.html.erb (20.1ms)
+  Rendered articulos/new.html.erb within layouts/application (62.3ms)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of nil into String):
+    27: 
+    28:     <%= f.label :categoria%>
+    29:     <%= f.text_area :categoria%>
+    30:     <%= gravatar2_for articulo %>
+    31:           <a href="http://gravatar.com/emails" target="_blank">change</a>
+    32:     <br><br>
+    33:     <%= f.submit "Guardar Cambios" %>
+  
+app/helpers/articulos_helper.rb:4:in `digest'
+app/helpers/articulos_helper.rb:4:in `hexdigest'
+app/helpers/articulos_helper.rb:4:in `gravatar2_for'
+app/views/articulos/_form.html.erb:30:in `block in _app_views_articulos__form_html_erb___3172368418756050263_70118725058400'
+app/views/articulos/_form.html.erb:1:in `_app_views_articulos__form_html_erb___3172368418756050263_70118725058400'
+app/views/articulos/new.html.erb:5:in `_app_views_articulos_new_html_erb___431362600008619435_70118725112620'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.3ms)
+Started GET "/articulos/19" for 172.19.0.1 at 2017-05-28 01:47:30 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mArticulo Load (1.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Articulo with 'id'=19):
+  
+app/controllers/articulos_controller.rb:69:in `set_articulo'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:47:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (4.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (80.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 567ms (Views: 540.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:47:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (3.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (37.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 402ms (Views: 377.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 01:47:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_articulos_form.html.erb (20.3ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (52.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 492ms (Views: 458.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/articulos" for 172.19.0.1 at 2017-05-28 01:47:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bqeBNmddm4sJ94qwq/OxCBeJ+amqExxa3d6/XBRW1Ey9Go15dUU3CS7f0jToaWWhWBwoaFk3IPUStUw2A7HXgw==", "articulo"=>{"name"=>"caca", "precio"=>"1", "stock"=>"1", "categoria"=>"caca", "descripcion"=>"caca"}, "commit"=>"Crear"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "articulos" ("name", "user_id", "stock", "precio", "descripcion", "created_at", "updated_at", "categoria") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "caca"], ["user_id", 22], ["stock", 1], ["precio", 1], ["descripcion", "caca"], ["created_at", 2017-05-28 01:47:48 UTC], ["updated_at", 2017-05-28 01:47:48 UTC], ["categoria", "caca"]]
+  [1m[35m (16.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 34ms (ActiveRecord: 18.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:47:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (7.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (55.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 477ms (Views: 452.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articulos/20/edit" for 172.19.0.1 at 2017-05-28 01:47:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/_form.html.erb (3.3ms)
+  Rendered articulos/edit.html.erb within layouts/application (67.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 500ms (Views: 471.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:49:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (6.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (43.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 444ms (Views: 410.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 01:49:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_articulos_form.html.erb (19.3ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (56.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 434ms (Views: 398.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 01:50:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (6.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (37.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 449ms (Views: 425.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articulos/20/edit" for 172.19.0.1 at 2017-05-28 01:50:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticulo Load (1.4ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (152.4ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articulo' for #<#<Class:0x007f8b92ff3438>:0x007f8b934cca90>):
+    3: <div class='wrapper'>
+    4: <% if logged_in? %>
+    5:   <% if current_user.admin? %>
+    6:   <%= form_for(articulo) do |f| %>
+    7:     <% if articulo.errors.any? %>
+    8:       <div id="error_explanation">
+    9:         <h2><%= pluralize(articulo.errors.count, "error") %> prohibited this articulo from being saved:</h2>
+  
+app/views/articulos/edit.html.erb:6:in `_app_views_articulos_edit_html_erb___1486546368882630278_70118724233820'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.3ms)
+Started GET "/articulos/20/edit" for 172.19.0.1 at 2017-05-28 01:50:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (175.1ms)
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articulo' for #<#<Class:0x007f8b92ff3438>:0x007f8b92261568>):
+    4: <% if logged_in? %>
+    5:   <% if current_user.admin? %>
+    6:   <%= form_for(@articulo) do |f| %>
+    7:     <% if articulo.errors.any? %>
+    8:       <div id="error_explanation">
+    9:         <h2><%= pluralize(articulo.errors.count, "error") %> prohibited this articulo from being saved:</h2>
+   10: 
+  
+app/views/articulos/edit.html.erb:7:in `block in _app_views_articulos_edit_html_erb___1486546368882630278_70118714577020'
+app/views/articulos/edit.html.erb:6:in `_app_views_articulos_edit_html_erb___1486546368882630278_70118714577020'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.3ms)
+Started GET "/articulos/20/edit" for 172.19.0.1 at 2017-05-28 01:51:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (155.1ms)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articulo' for #<#<Class:0x007f8b92ff3438>:0x007f8b917fb880>):
+    22: 
+    23:       <%= f.label :categoria%>
+    24:       <%= f.text_area :categoria%>
+    25:       <%= gravatar2_for articulo %>
+    26:       <a href="http://gravatar.com/emails" target="_blank">change</a>
+    27:       <br><br>
+    28:       <%= f.submit "Guardar Cambios" %>
+  
+app/views/articulos/edit.html.erb:25:in `block in _app_views_articulos_edit_html_erb___1486546368882630278_70118709160420'
+app/views/articulos/edit.html.erb:6:in `_app_views_articulos_edit_html_erb___1486546368882630278_70118709160420'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.0ms)
+Started GET "/articulos/20/edit" for 172.19.0.1 at 2017-05-28 01:51:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 461ms (Views: 439.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articulos/20/edit" for 172.19.0.1 at 2017-05-28 01:52:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (27.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 494ms (Views: 472.5ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddImageToArticulos (20170528021701)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "articulos" ADD "image" character varying[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170528021701"]]
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:19:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (11.0ms)
+  Rendered shared/_articulos_index.html.erb (184.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (243.7ms)
+Completed 500 Internal Server Error in 405ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Articulo::ImageUploader):
+    2: <div class='center'>
+    3: <ul class="catCardList">
+    4: <% if categoria == '' %>
+    5: <%@articulos = Articulo.all%>
+    6: <%  else  %>
+    7: <%@articulos = Articulo.where(categoria: categoria)%>
+    8: <% end %>
+  
+app/models/articulo.rb:8:in `<class:Articulo>'
+app/models/articulo.rb:1:in `<top (required)>'
+app/views/shared/_articulos_index.html.erb:5:in `_app_views_shared__articulos_index_html_erb___4072764684532882904_31030300'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb__396406131856087448_35652520'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.9ms)
+  [1m[35mSQL (15.9ms)[0m  [1m[31mDELETE FROM "articulos"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:20:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (10.7ms)
+  [1m[36mArticulo Load (1.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (113.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (312.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 4108ms (Views: 4051.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 02:20:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered shared/_error_messages.html.erb (2.8ms)
+  Rendered shared/_articulos_form.html.erb (137.2ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (180.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 795ms (Views: 605.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/articulos" for 172.19.0.1 at 2017-05-28 02:22:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"62sbnkvA2P3xrn386pYEvoMPQR5UJkBBR9D/nNn17G841hfRWdh0f9aGJXipDNAXzJqQ36cCfO6Iuwz2zhLvoA==", "articulo"=>{"name"=>"Macbook Air", "precio"=>"599990", "stock"=>"1", "categoria"=>"tecnologia", "descripcion"=>"The MacBook Air is a line of Macintosh subnotebook computers developed and manufactured by Apple Inc.", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f0be5cef5c0 @tempfile=#<Tempfile:/tmp/RackMultipart20170528-1-ivdlbz.jpeg>, @original_filename="MACBOOKAIR.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"articulo[image]\"; filename=\"MACBOOKAIR.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Crear"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+Unpermitted parameter: image
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articulos" ("name", "user_id", "stock", "precio", "descripcion", "created_at", "updated_at", "categoria") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Macbook Air"], ["user_id", 22], ["stock", 1], ["precio", 599990], ["descripcion", "The MacBook Air is a line of Macintosh subnotebook computers developed and manufactured by Apple Inc."], ["created_at", 2017-05-28 02:22:14 UTC], ["updated_at", 2017-05-28 02:22:14 UTC], ["categoria", "tecnologia"]]
+  [1m[35m (14.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:22:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (37.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (81.8ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    13: <% @articulos.each do |articulo| %>
+    14: <li class="catCardList">
+    15: <div class="catCard">
+    16: <a href="#"><%= image_tag articulo.image.thumb.url %></a>
+    17: <div class="lowerCatCard">
+    18: 
+    19: <% if logged_in? %>
+  
+app/views/shared/_articulos_index.html.erb:16:in `block in _app_views_shared__articulos_index_html_erb___2697640035363191555_69844536861140'
+app/views/shared/_articulos_index.html.erb:13:in `_app_views_shared__articulos_index_html_erb___2697640035363191555_69844536861140'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___1162501865572084113_69844537835940'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.7ms)
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:22:43 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (23.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (56.4ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    13: <% @articulos.each do |articulo| %>
+    14: <li class="catCardList">
+    15: <div class="catCard">
+    16: <a href="#"><%= image_tag articulo.image.thumb.url %></a>
+    17: <div class="lowerCatCard">
+    18: 
+    19: <% if logged_in? %>
+  
+app/views/shared/_articulos_index.html.erb:16:in `block in _app_views_shared__articulos_index_html_erb___2697640035363191555_69844531231920'
+app/views/shared/_articulos_index.html.erb:13:in `_app_views_shared__articulos_index_html_erb___2697640035363191555_69844531231920'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___1162501865572084113_69844531535880'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.9ms)
+  [1m[35mSQL (12.2ms)[0m  [1m[31mDELETE FROM "articulos"[0m
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:23:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (114.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (197.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+Completed 200 OK in 835ms (Views: 805.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 02:23:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_articulos_form.html.erb (23.1ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (59.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 718ms (Views: 636.7ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/articulos" for 172.19.0.1 at 2017-05-28 02:24:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6ULH6ZIzkwMgT0CJQNWoct1zP/zUbF9C/VxSzY3f+r46/8umgCs/gQdnGA0DT3zbkubuPSdIY+0yN6Gnmjj5cQ==", "articulo"=>{"name"=>"Macbook Air", "precio"=>"599990", "stock"=>"1", "categoria"=>"tecnologia", "descripcion"=>"The MacBook Air is a line of Macintosh subnotebook computers developed and manufactured by Apple Inc. ", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000038fe438 @tempfile=#<Tempfile:/tmp/RackMultipart20170528-1-1ppqyke.jpeg>, @original_filename="MACBOOKAIR.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"articulo[image]\"; filename=\"MACBOOKAIR.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Crear"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articulos" ("name", "user_id", "stock", "precio", "descripcion", "created_at", "updated_at", "categoria", "image") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Macbook Air"], ["user_id", 22], ["stock", 1], ["precio", 599990], ["descripcion", "The MacBook Air is a line of Macintosh subnotebook computers developed and manufactured by Apple Inc. "], ["created_at", 2017-05-28 02:24:12 UTC], ["updated_at", 2017-05-28 02:24:12 UTC], ["categoria", "tecnologia"], ["image", "MACBOOKAIR.jpeg"]]
+  [1m[35m (16.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 470ms (ActiveRecord: 18.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:24:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (9.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (67.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 675ms (Views: 649.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:24:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (8.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (45.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 641ms (Views: 619.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articulos/22" for 172.19.0.1 at 2017-05-28 02:25:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticulo Load (1.1ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered articulos/show.html.erb within layouts/application (241.2ms)
+Completed 500 Internal Server Error in 529ms (ActiveRecord: 10.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articulo' for #<#<Class:0x007f0be52a3b98>:0x007f0be52a0bf0>):
+     9:       <div class="top">
+    10:       <div class="product_images">
+    11:         <div class="product_image_1">
+    12:           <%= image_tag articulo.image.url %>
+    13:         </div>
+    14:         </div>
+    15: 
+  
+app/views/articulos/show.html.erb:12:in `_app_views_articulos_show_html_erb___4303602581840201661_69844533078240'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.6ms)
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:25:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (11.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (65.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 759ms (Views: 719.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articulos/22" for 172.19.0.1 at 2017-05-28 02:25:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticulo Load (2.5ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."user_id" = $1 AND "comentarios"."articulo_id" = $2[0m  [["user_id", "22"], ["articulo_id", "22"]]
+  Rendered shared/_add_comentario.html.erb (3.3ms)
+  Rendered articulos/show.html.erb within layouts/application (137.0ms)
+  Rendered layouts/_shim.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 200 OK in 1076ms (Views: 1034.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/articulos/22" for 172.19.0.1 at 2017-05-28 02:26:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticulo Load (2.1ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."user_id" = $1 AND "comentarios"."articulo_id" = $2[0m  [["user_id", "22"], ["articulo_id", "22"]]
+  Rendered shared/_add_comentario.html.erb (3.1ms)
+  Rendered articulos/show.html.erb within layouts/application (71.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 574ms (Views: 536.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/articulos/22/edit" for 172.19.0.1 at 2017-05-28 02:26:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticulo Load (1.9ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 534ms (Views: 487.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/articulos/22/edit" for 172.19.0.1 at 2017-05-28 02:27:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticulo Load (1.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 630ms (Views: 602.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:27:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (8.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (68.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 583ms (Views: 554.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:28:30 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (6.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (47.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 524ms (Views: 488.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tecnologia" for 172.19.0.1 at 2017-05-28 02:28:50 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#categoria as HTML
+  Parameters: {"categoria"=>"tecnologia"}
+  Rendering static_pages/categoria.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."categoria" = $1 ORDER BY "articulos"."created_at" DESC[0m  [["categoria", "tecnologia"]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (8.6ms)
+  Rendered static_pages/categoria.html.erb within layouts/application (38.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 422ms (Views: 396.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:28:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (6.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (40.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 535ms (Views: 505.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:33:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (9.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (65.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 734ms (Views: 699.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 02:33:24 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  Rendered shared/_articulos_form.html.erb (60.3ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (90.9ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 7, expected 1..2)):
+    14:       <%= f.number_field :stock %>
+    15:       <%= f.label :categoria %>
+    16:       <%= f.text_field :categoria %>
+    17:       <%= f.select :categoria, options_for_select("tecnologia", "hombre", "mujer", "calzado", "deporte", "accesorios", "outdoor")%>
+    18:       <%= f.text_area :descripcion, placeholder: "Agrega una descripcion...", :rows=> 10, :cols=>50 %>
+    19:       <%= f.label :image %><br>
+    20:       <%= f.file_field :image %>
+  
+app/views/shared/_articulos_form.html.erb:17:in `block in _app_views_shared__articulos_form_html_erb___1779463592025571002_69844424774580'
+app/views/shared/_articulos_form.html.erb:7:in `_app_views_shared__articulos_form_html_erb___1779463592025571002_69844424774580'
+app/views/static_pages/add_articulo.html.erb:3:in `_app_views_static_pages_add_articulo_html_erb___4308456605282472421_69844424847760'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.2ms)
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 02:34:15 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_articulos_form.html.erb (36.5ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (82.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 694ms (Views: 649.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 02:34:43 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered shared/_articulos_form.html.erb (38.6ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (91.6ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 560ms (Views: 535.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 02:34:56 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered shared/_articulos_form.html.erb (41.2ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (102.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 717ms (Views: 669.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/add_articulo" for 172.19.0.1 at 2017-05-28 02:35:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#add_articulo as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering static_pages/add_articulo.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered shared/_articulos_form.html.erb (25.1ms)
+  Rendered static_pages/add_articulo.html.erb within layouts/application (68.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 635ms (Views: 605.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:35:25 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (8.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (42.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 539ms (Views: 508.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articulos/22/edit" for 172.19.0.1 at 2017-05-28 02:35:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticulo Load (1.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered articulos/edit.html.erb within layouts/application (49.1ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 7, expected 1..2)):
+    21:       <%= f.text_area :descripcion %>
+    22: 
+    23:       <%= f.label :categoria%>
+    24:       <%= f.select :categoria, options_for_select("tecnologia", "hombre", "mujer", "calzado", "deporte", "accesorios", "outdoor")%>
+    25: 
+    26:       <%= f.label :image %><br>
+    27:       <%= f.file_field :image %>
+  
+app/views/articulos/edit.html.erb:24:in `block in _app_views_articulos_edit_html_erb__3207223111127915555_69844423890640'
+app/views/articulos/edit.html.erb:6:in `_app_views_articulos_edit_html_erb__3207223111127915555_69844423890640'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (18.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.5ms)
+Started GET "/" for 172.19.0.1 at 2017-05-28 02:35:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered shared/_articulos_index.html.erb (9.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (76.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 698ms (Views: 675.2ms | ActiveRecord: 1.1ms)
+
+

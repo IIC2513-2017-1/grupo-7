@@ -13,7 +13,7 @@
 <% @articulos.each do |articulo| %>
 <li class="catCardList">
 <div class="catCard">
-<a href="#"><img src="http://placehold.it/221x200" alt=""></a>
+<a href="#"><%= image_tag articulo.image.url %></a>
 <div class="lowerCatCard">
 
 <% if logged_in? %>

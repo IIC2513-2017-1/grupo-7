@@ -1,0 +1,6 @@
+<% provide(:title, @categoria) %>
+<%= render 'layouts/sidebar'%>
+<div class="wrapper">
+  <p class='page-title'>Categoria: <%=@categoria%></p>
+  <%= render 'shared/articulos_index', :categoria => @categoria%>
+</div>

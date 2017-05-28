@@ -12,5 +12,9 @@ class StaticPagesController < ApplicationController
   def carrito
   end
 
+  def categoria
+    @categoria = params[:categoria]
+  end
+
 
 end

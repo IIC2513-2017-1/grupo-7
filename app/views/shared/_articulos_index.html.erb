@@ -1,7 +1,15 @@
 <ejemplo1>
 <div class='center'>
 <ul class="catCardList">
+<% if categoria == '' %>
 <%@articulos = Articulo.all%>
+<%  else  %>
+<%@articulos = Articulo.where(categoria: categoria)%>
+<% end %>
+
+<%  if  @articulos == nil %>
+<h2>No hay articulos que esa categoria!</h2>
+<%  else %>
 <% @articulos.each do |articulo| %>
 <li class="catCardList">
 <div class="catCard">
@@ -34,7 +42,7 @@
 
 
 <% end %>
-
+<% end %>
 </ul>
 </div>
 </ejemplo1>

@@ -70,20 +70,28 @@
         </div>
 
 
-
+        <%@comentarios = Comentario.where(user_id: current_user.id, articulo_id:@articulo.id)%>
         <div class="bottom">
+
         <div class="reviews">
           <div class="head">
             <h2>Comentarios</h2>
           </div>
+            <% if @comentarios.any?%>
+            <% @comentarios.each do |comentario|%>
+              <%@usuario = User.find_by(id: comentario.user_id) %>
             <div class="content">
-              <span class="name">Marty McFly</span><span class="stars"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star-half-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i></span>
-              <p class="review_text">"Check out that four by four. That is hot. Someday, Jennifer, someday. Wouldn't it be great to take that truck up to the lake. Throw a couple of sleeping bags in the back. Whoa, wait, Doc. Here you go, lady. There's a quarter. Well, it will just happen. Like the way I met your father"</p>
-              <span class="writeReview"><a href="#">Write your Own Review</a></span>
+              <span class="name"><%=@usuario.name%></span><span class="stars"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star-half-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i></span>
+              <p class="review_text"><%=comentario.content%></p>
             </div>
+            <% end %>
+            <%else%>
+            <p>No hay comentarios para este articulo</p>
+            <% end %>
           </div>
           </div>
 
+          <%= render 'shared/add_comentario', articulo: @articulo.id%>
 
       </div>
    </div>

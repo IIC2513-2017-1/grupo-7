@@ -2,7 +2,7 @@
 <%= render 'layouts/sidebar'%>
 <div class="wrapper">
   <p class='page-title'>Productos recientes</p>
-  <%= render 'shared/articulos_index'%>
+  <%= render 'shared/articulos_index', categoria: ""%>
   <% if logged_in? %>
     <% if current_user.admin?%>
     <br>

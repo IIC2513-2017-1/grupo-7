@@ -16,7 +16,7 @@
     <% @comentarios.each do |comentario| %>
       <tr>
         <td><%= comentario.user_id %></td>
-        <td><%= comentario.integer %></td>
+        <td><%= comentario.articulo_id %></td>
         <td><%= comentario.content %></td>
         <td><%= link_to 'Show', comentario %></td>
         <td><%= link_to 'Edit', edit_comentario_path(comentario) %></td>

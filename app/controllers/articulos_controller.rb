@@ -12,6 +12,7 @@ class ArticulosController < ApplicationController
   # GET /articulos/1.json
   def show
     @cart = Cart.new
+    @comentario = Comentario.new
   end
 
   # GET /articulos/new
@@ -27,7 +28,7 @@ class ArticulosController < ApplicationController
   # POST /articulos.json
   def create
     @articulo = current_user.articulos.build(articulo_params)
-    if @articulo.save
+    if @articulo.save!
       flash[:success] = "Articulo publicado!"
       redirect_to root_url
     else
@@ -52,6 +53,14 @@ class ArticulosController < ApplicationController
   # DELETE /articulos/1
   # DELETE /articulos/1.json
   def destroy
+    articulo_id = @articulo.id
+    @comentarios = Comentario.where(articulo_id: articulo_id)
+    if @comentarios.any?
+      @comentarios.each do |comentario|
+        comentario.destroy
+      end
+    end
+
     @articulo.destroy
     respond_to do |format|
       format.html { redirect_to articulos_url, notice: 'Articulo was successfully destroyed.' }
@@ -67,6 +76,6 @@ class ArticulosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def articulo_params
-      params.require(:articulo).permit(:name, :precio, :stock, :descripcion)
+      params.require(:articulo).permit(:name, :precio, :stock, :descripcion, :categoria)
     end
 end

@@ -25,15 +25,11 @@ class ComentariosController < ApplicationController
   # POST /comentarios.json
   def create
     @comentario = Comentario.new(comentario_params)
-
-    respond_to do |format|
-      if @comentario.save
-        format.html { redirect_to @comentario, notice: 'Comentario was successfully created.' }
-        format.json { render :show, status: :created, location: @comentario }
-      else
-        format.html { render :new }
-        format.json { render json: @comentario.errors, status: :unprocessable_entity }
-      end
+    if @comentario.save!
+      flash[:success] = "Articulo publicado!"
+      redirect_to :back
+    else
+      render 'static_pages/home'
     end
   end
 
@@ -69,6 +65,6 @@ class ComentariosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comentario_params
-      params.require(:comentario).permit(:user_id, :integer, :content)
+      params.require(:comentario).permit(:user_id, :articulo_id, :content)
     end
 end

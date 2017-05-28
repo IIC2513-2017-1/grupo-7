@@ -53,13 +53,8 @@ class ArticulosController < ApplicationController
   # DELETE /articulos/1
   # DELETE /articulos/1.json
   def destroy
-    articulo_id = @articulo.id
-    @comentarios = Comentario.where(articulo_id: articulo_id)
-    if @comentarios.any?
-      @comentarios.each do |comentario|
-        comentario.destroy
-      end
-    end
+    destroy_cart_entries
+    destroy_comments
 
     @articulo.destroy
     respond_to do |format|
@@ -78,4 +73,25 @@ class ArticulosController < ApplicationController
     def articulo_params
       params.require(:articulo).permit(:name, :precio, :stock, :descripcion, :categoria)
     end
+
+    def destroy_comments
+      articulo_id = @articulo.id
+      @comentarios = Comentario.where(articulo_id: articulo_id)
+      if @comentarios.any?
+        @comentarios.each do |comentario|
+          comentario.destroy
+        end
+      end
+    end
+
+    def destroy_cart_entries
+      articulo_id = @articulo.id
+      @carts = Cart.where(articulo_id: articulo_id)
+      if @carts.any?
+        @carts.each do |cart|
+          cart.destroy
+        end
+      end
+    end
+
 end

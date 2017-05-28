@@ -1,3 +1,4 @@
+<%if logged_in?%>
 <div class='reviews'>
 <%= form_for(@comentario) do |f| %>
 
@@ -10,3 +11,6 @@
   </div>
 <% end %>
 </div>
+<% else %>
+<p><%=link_to "Inicia sesion", login_path%> para escribir comentarios  </p>
+<% end %>

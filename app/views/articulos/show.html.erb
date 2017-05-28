@@ -70,7 +70,7 @@
         </div>
 
 
-        <%@comentarios = Comentario.where(user_id: current_user.id, articulo_id:@articulo.id)%>
+        <%@comentarios = Comentario.where(articulo_id:@articulo.id)%>
         <div class="bottom">
 
         <div class="reviews">

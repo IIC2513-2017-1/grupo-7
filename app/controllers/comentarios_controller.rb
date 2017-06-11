@@ -50,11 +50,8 @@ class ComentariosController < ApplicationController
   # DELETE /comentarios/1
   # DELETE /comentarios/1.json
   def destroy
-    @comentario.destroy
-    respond_to do |format|
-      format.html { redirect_to comentarios_url, notice: 'Comentario was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    @comentario.destroy!
+    redirect_to :back
   end
 
   private

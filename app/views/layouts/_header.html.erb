@@ -2,7 +2,6 @@
     <div>
       <ul>
         <%= link_to "SMARTBUY" , root_path, id: 'logo' %>
-        <li><%= link_to "Inicio", root_path %></li>
         <% if logged_in? %>
           <li><%= link_to "Ver Carrito", carrito_path %></li>
           <li class="dropdown">

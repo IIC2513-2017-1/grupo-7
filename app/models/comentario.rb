@@ -1,3 +1,3 @@
 class Comentario < ApplicationRecord
-  belongs_to :articulo, dependent: :destroy
+  belongs_to :articulo
 end

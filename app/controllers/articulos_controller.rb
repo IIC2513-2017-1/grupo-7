@@ -56,10 +56,8 @@ class ArticulosController < ApplicationController
     destroy_cart_entries
     destroy_comments
 
-    @articulo.destroy
-    respond_to do |format|
-      format.html { redirect_to articulos_url, notice: 'Articulo was successfully destroyed.' }
-      format.json { head :no_content }
+    if @articulo.destroy!
+      redirect_to root_path
     end
   end
 

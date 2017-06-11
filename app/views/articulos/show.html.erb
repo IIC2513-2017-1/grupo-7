@@ -82,6 +82,11 @@
               <%@usuario = User.find_by(id: comentario.user_id) %>
             <div class="content">
               <span class="name"><%=@usuario.name%></span><span class="stars"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star-half-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i></span>
+              <% if logged_in?%>
+              <%if current_user.id == comentario.user_id || current_user.admin?%>
+                <%= link_to comentario, method: :delete, data: { confirm: 'Estas seguro?' } do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %>
+              <% end %>
+              <% end %>
               <p class="review_text"><%=comentario.content%></p>
             </div>
             <% end %>

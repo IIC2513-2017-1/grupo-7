@@ -1,35 +1,40 @@
 <% provide(:title, "Carrito | SmartBuy") %>
 <%= render 'layouts/sidebar'%>
+
 <% if logged_in?%>
   <div class='wrapper'>
-    <p class="page-title">Items en el carrito</p>
-    <p id="notice"><%= notice %></p>
     <div class ="center">
-    <%@carts = Cart.all%>
-    <% @total = 0%>
-    <table>
-
-      <tr>
-        <th>Nombre</th>
-        <th>Cantidad</th>
-        <th>Precio</th>
-        <th></th>
-      </tr>
-
-    <% @carts.each do |cart| %>
-    <% if cart.user_id == current_user.id %>
-    <% @articulo = Articulo.find(cart.articulo_id) %>
-
-    <tr>
-      <td><%=link_to@articulo.name, @articulo %></td>
-        <td><%= cart.cantidad %></td>
-        <td><%= cart.cantidad.to_i * @articulo.precio.to_i %></td>
-        <td><%= link_to 'Eliminar', cart, method: :delete, data: { confirm: 'Are you sure?'} %><td>
-        <%@total += cart.cantidad.to_i * @articulo.precio.to_i%>
+    <div class="table-title">
+    <h3 class="page-title">Items en el carrito</h3></div>
+    <%@carts = Cart.where(user_id: current_user.id)%>
+    <% if @carts.any?%>
+      <% @total = 0%>
+      <table class="table-fill">
+        <thead>
+          <tr>
+          <th class="text-left">Nombre</th>
+          <th class="text-left">Cantidad</th>
+          <th class="text-left">Precio</th>
+          <th class="text-left"></th>
+        </tr>
+        </thead>
+        <tbody class="table-hover">
+        <% @carts.each do |cart| %>
+          <% @articulo = Articulo.find(cart.articulo_id) %>
+          <tr>
+            <td class="text-center"><%=link_to @articulo.name, @articulo %></td>
+            <td class="text-center"><%= cart.cantidad %></td>
+            <td class="text-center"><%= cart.cantidad.to_i * @articulo.precio.to_i %></td>
+            <td class="text-center"><%= link_to 'Eliminar', cart, method: :delete, data: { confirm: 'Are you sure?'} %></td>
+          </tr>
+            <%@total += cart.cantidad.to_i * @articulo.precio.to_i%>
         <% end %>
-    <% end %>
-  </table>
+        </tbody>
+      </table>
   <p> Total: <%= @total %></p>
+  <%else %>
+  <p>No hay items en el carrito</p>
+  <% end %>
   </div>
   </div>
 <%else%>

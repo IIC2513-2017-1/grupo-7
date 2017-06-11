@@ -2,14 +2,15 @@
 <%= render 'layouts/sidebar'%>
 <div class="wrapper">
   <p class='page-title'>Productos recientes</p>
-  <%= render 'shared/articulos_index', categoria: ""%>
   <% if logged_in? %>
     <% if current_user.admin?%>
+      <%= link_to "Agregar Articulo", add_articulo_path, style: "font-size: 15px; float: right;"%>
     <br>
-      <%= link_to "Publicar Articulo", add_articulo_path %>
     <% end %>
   <% else %>
     <h2>Welcome to SmartBuy</h2>
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
   <% end %>
+  <%= render 'shared/articulos_index', categoria: ""%>
+
 </div>

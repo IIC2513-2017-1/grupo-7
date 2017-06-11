@@ -6,6 +6,11 @@ class ArticulosController < ApplicationController
   # GET /articulos.json
   def index
     @articulos = Articulo.all
+    if params[:search]
+      @articulos = Articulo.search(params[:search]).order("created_at DESC")
+    else
+      @articulos = Articulo.all.order('created_at DESC')
+    end
   end
 
   # GET /articulos/1

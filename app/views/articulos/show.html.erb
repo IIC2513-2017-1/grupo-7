@@ -4,39 +4,27 @@
 <articulopage>
   <div class="wrapper">
     <div id="product_layout_1">
-
-
       <div class="top">
       <div class="product_images">
         <div class="product_image_1">
           <%= image_tag @articulo.image.url %>
         </div>
         </div>
-
-
         <div class="product_info">
           <h1><%= @articulo.name %></h1><br>
-
           <div class="price">
           <h2 class="sale_price">$<%= @articulo.precio %></h2><br><br>
           </div>
-
           <div class="rating">
-            <i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star-half-o fa-3x"></i><i class="fa fa-star-o fa-3x"></i>
+            <p>Calificacion: <%= rating_for @articulo, "rating"%></p>
           </div>
-
           <div class="product_description">
           <p> <%= @articulo.descripcion %> </p>
           </div>
-
           <div class="related_info">
            <span class="sku"> Publicado hace <%= time_ago_in_words(@articulo.created_at) %> </span>
            </div>
-
-
          <div class="options">
-
-
           <div class="buying">
                    <% if logged_in?%>
                   <%= form_for @cart do |f| %>
@@ -61,15 +49,9 @@
                    </div>
                    <% end %>
             </div>
-
-
             </div>
-
-
         </div>
         </div>
-
-
         <%@comentarios = Comentario.where(articulo_id:@articulo.id)%>
         <div class="bottom">
 
@@ -81,7 +63,7 @@
             <% @comentarios.each do |comentario|%>
               <%@usuario = User.find_by(id: comentario.user_id) %>
             <div class="content">
-              <span class="name"><%=@usuario.name%></span><span class="stars"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star-half-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i></span>
+              <span class="name"><%=@usuario.name%></span>
               <% if logged_in?%>
               <%if current_user.id == comentario.user_id || current_user.admin?%>
                 <%= link_to comentario, method: :delete, data: { confirm: 'Estas seguro?' } do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %>

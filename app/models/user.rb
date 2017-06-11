@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  ratyrate_rater
+  mount_uploader :image, ImageUploader
   has_many :articulos, dependent: :destroy
   before_save { email.downcase! }
   attr_accessor :remember_token, :activation_token, :reset_token

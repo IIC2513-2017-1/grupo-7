@@ -26,8 +26,13 @@ class ComentariosController < ApplicationController
   def create
     @comentario = Comentario.new(comentario_params)
     if @comentario.save!
-      flash[:success] = "Articulo publicado!"
-      redirect_to :back
+        respond_to do |format|
+      # if the response fomat is html, redirect as usual
+      format.html { redirect_to :back }
+
+      # if the response format is javascript, do something else...
+      format.js { }
+    end
     else
       render 'static_pages/home'
     end
@@ -50,8 +55,13 @@ class ComentariosController < ApplicationController
   # DELETE /comentarios/1
   # DELETE /comentarios/1.json
   def destroy
-    @comentario.destroy!
-    redirect_to :back
+    if @comentario.destroy!
+      respond_to do |format|
+        format.html { redirect_to :back}
+        format.json { head :no_content }
+        format.js   { render :layout => false }
+      end
+    end
   end
 
   private

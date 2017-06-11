@@ -50072,3 +50072,365 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 614ms (Views: 590.9ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for 172.19.0.1 at 2017-06-11 03:24:24 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (309.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (520.0ms)
+Completed 500 Internal Server Error in 595ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete_articulo' for #<#<Class:0x007f75a60368f8>:0x007f75a6034ff8>):
+    21:       <div id="navcontainer">
+    22:       <ul>
+    23:       <li ><%= link_to edit_articulo_path(articulo) do %><i  class="fa fa-pencil fa-2x" aria-hidden="true"></i><% end %></li>
+    24:       <li><%= link_to articulo, method: :delete, data: { confirm: 'Estas seguro?' },:remote => true, :class=>delete_articulo do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %></li>
+    25:       </ul>
+    26:       </div>
+    27:   <% end %>
+  
+app/views/shared/_articulos_index.html.erb:24:in `block in _app_views_shared__articulos_index_html_erb__3886096795320009827_70071787702800'
+app/views/shared/_articulos_index.html.erb:13:in `_app_views_shared__articulos_index_html_erb__3886096795320009827_70071787702800'
+app/views/static_pages/home.html.erb:14:in `_app_views_static_pages_home_html_erb__3755697474749894825_70071636572940'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.2ms)
+Started GET "/" for 172.19.0.1 at 2017-06-11 03:25:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (180.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (250.5ms)
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete_articulo' for #<#<Class:0x007f75a60368f8>:0x007f75a60eb578>):
+    21:       <div id="navcontainer">
+    22:       <ul>
+    23:       <li ><%= link_to edit_articulo_path(articulo) do %><i  class="fa fa-pencil fa-2x" aria-hidden="true"></i><% end %></li>
+    24:       <li><%= link_to articulo, method: :delete, data: { confirm: 'Estas seguro?' }, :remote => true, :class => delete_articulo do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %></li>
+    25:       </ul>
+    26:       </div>
+    27:   <% end %>
+  
+app/views/shared/_articulos_index.html.erb:24:in `block in _app_views_shared__articulos_index_html_erb__3886096795320009827_70071637026720'
+app/views/shared/_articulos_index.html.erb:13:in `_app_views_shared__articulos_index_html_erb__3886096795320009827_70071637026720'
+app/views/static_pages/home.html.erb:14:in `_app_views_static_pages_home_html_erb__3755697474749894825_70071636926520'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.4ms)
+Started GET "/" for 172.19.0.1 at 2017-06-11 03:25:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (26.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (65.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 4272ms (Views: 4254.4ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/articulos/11" for 172.19.0.1 at 2017-06-11 03:26:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#destroy as JS
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts" WHERE "carts"."articulo_id" = $1[0m  [["articulo_id", 11]]
+  [1m[36mCart Load (0.8ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."articulo_id" = $1[0m  [["articulo_id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 11]]
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "11"]]
+  [1m[36mComentario Load (0.6ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "11"]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "comentarios" WHERE "comentarios"."id" = $1[0m  [["id", 21]]
+  [1m[35m (17.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "comentarios" WHERE "comentarios"."id" = $1[0m  [["id", 22]]
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRate Load (0.5ms)[0m  [1m[34mSELECT "rates".* FROM "rates" WHERE "rates"."rateable_id" = $1 AND "rates"."rateable_type" = $2 AND "rates"."dimension" IS NULL[0m  [["rateable_id", 11], ["rateable_type", "Articulo"]]
+  [1m[36mRatingCache Load (0.5ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" IS NULL LIMIT $3[0m  [["cacheable_id", 11], ["cacheable_type", "Articulo"], ["LIMIT", 1]]
+  [1m[36mRate Load (0.8ms)[0m  [1m[34mSELECT "rates".* FROM "rates" WHERE "rates"."rateable_id" = $1 AND "rates"."rateable_type" = $2 AND "rates"."dimension" = $3[0m  [["rateable_id", 11], ["rateable_type", "Articulo"], ["dimension", "rating"]]
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "rates" WHERE "rates"."id" = $1[0m  [["id", 1]]
+  [1m[36mRatingCache Load (0.5ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 11], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "rating_caches" WHERE "rating_caches"."id" = $1[0m  [["id", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = $1[0m  [["id", 11]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering articulos/destroy.js.erb
+  Rendered articulos/destroy.js.erb (0.8ms)
+Completed 200 OK in 459ms (Views: 36.1ms | ActiveRecord: 85.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-06-11 03:26:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (44.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (156.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 998ms (Views: 968.2ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/articulos/10" for 172.19.0.1 at 2017-06-11 03:26:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#destroy as JS
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts" WHERE "carts"."articulo_id" = $1[0m  [["articulo_id", 10]]
+  [1m[36mCart Load (0.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."articulo_id" = $1[0m  [["articulo_id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (19.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "10"]]
+  [1m[36mComentario Load (0.9ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "10"]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "comentarios" WHERE "comentarios"."id" = $1[0m  [["id", 19]]
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "comentarios" WHERE "comentarios"."id" = $1[0m  [["id", 20]]
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRate Load (0.7ms)[0m  [1m[34mSELECT "rates".* FROM "rates" WHERE "rates"."rateable_id" = $1 AND "rates"."rateable_type" = $2 AND "rates"."dimension" IS NULL[0m  [["rateable_id", 10], ["rateable_type", "Articulo"]]
+  [1m[36mRatingCache Load (0.7ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" IS NULL LIMIT $3[0m  [["cacheable_id", 10], ["cacheable_type", "Articulo"], ["LIMIT", 1]]
+  [1m[36mRate Load (0.7ms)[0m  [1m[34mSELECT "rates".* FROM "rates" WHERE "rates"."rateable_id" = $1 AND "rates"."rateable_type" = $2 AND "rates"."dimension" = $3[0m  [["rateable_id", 10], ["rateable_type", "Articulo"], ["dimension", "rating"]]
+  [1m[36mRatingCache Load (0.6ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 10], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = $1[0m  [["id", 10]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering articulos/destroy.js.erb
+  Rendered articulos/destroy.js.erb (1.1ms)
+Completed 200 OK in 162ms (Views: 36.6ms | ActiveRecord: 78.1ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-06-11 03:27:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (124.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (276.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 804ms (Views: 769.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/articulos/9" for 172.19.0.1 at 2017-06-11 03:27:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mRatingCache Load (0.6ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 9], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "rates" WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = $2 AND "rates"."rateable_id" = $3 AND "rates"."rateable_type" = $4[0m  [["rater_id", 4], ["dimension", "rating"], ["rateable_id", 9], ["rateable_type", "Articulo"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mComentario Load (1.1ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_add_comentario.html.erb (1.5ms)
+  Rendered articulos/show.html.erb within layouts/application (351.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 1360ms (Views: 1221.3ms | ActiveRecord: 6.0ms)
+
+
+Started DELETE "/comentarios/18" for 172.19.0.1 at 2017-06-11 03:28:03 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"18"}
+  [1m[36mComentario Load (1.0ms)[0m  [1m[34mSELECT  "comentarios".* FROM "comentarios" WHERE "comentarios"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "comentarios" WHERE "comentarios"."id" = $1[0m  [["id", 18]]
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering comentarios/destroy.js.erb
+  Rendered comentarios/destroy.js.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 31.1ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/articulos/9" for 172.19.0.1 at 2017-06-11 03:31:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  [1m[36mRatingCache Load (0.6ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 9], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "rates" WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = $2 AND "rates"."rateable_id" = $3 AND "rates"."rateable_type" = $4[0m  [["rater_id", 4], ["dimension", "rating"], ["rateable_id", 9], ["rateable_type", "Articulo"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mComentario Load (0.6ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_add_comentario.html.erb (1.7ms)
+  Rendered articulos/show.html.erb within layouts/application (296.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 1275ms (Views: 1055.2ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/rate" for 172.19.0.1 at 2017-06-11 03:31:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"rating", "id"=>"9", "klass"=>"Articulo"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "rates" WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = $2 AND "rates"."rateable_id" = $3 AND "rates"."rateable_type" = $4[0m  [["rater_id", 4], ["dimension", "rating"], ["rateable_id", 9], ["rateable_type", "Articulo"]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "rates" ("rater_id", "rateable_type", "rateable_id", "stars", "dimension", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rater_id", 4], ["rateable_type", "Articulo"], ["rateable_id", 9], ["stars", 5.0], ["dimension", "rating"], ["created_at", 2017-06-11 03:31:11 UTC], ["updated_at", 2017-06-11 03:31:11 UTC]]
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRatingCache Load (0.4ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 9], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "rating_caches" ("cacheable_type", "cacheable_id", "avg", "qty", "dimension", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["cacheable_type", "Articulo"], ["cacheable_id", 9], ["avg", 5.0], ["qty", 1], ["dimension", "rating"], ["created_at", 2017-06-11 03:31:11 UTC], ["updated_at", 2017-06-11 03:31:11 UTC]]
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 150ms (Views: 0.7ms | ActiveRecord: 36.2ms)
+
+
+Started GET "/" for 172.19.0.1 at 2017-06-11 03:31:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY "articulos"."created_at" DESC[0m
+  Rendered shared/_articulos_index.html.erb (34.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (86.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 635ms (Views: 609.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articulos/9" for 172.19.0.1 at 2017-06-11 03:31:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (1.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mRatingCache Load (0.6ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 9], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "rates" WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = $2 AND "rates"."rateable_id" = $3 AND "rates"."rateable_type" = $4[0m  [["rater_id", 4], ["dimension", "rating"], ["rateable_id", 9], ["rateable_type", "Articulo"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mComentario Load (0.6ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_add_comentario.html.erb (1.6ms)
+  Rendered articulos/show.html.erb within layouts/application (65.3ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 525ms (Views: 487.1ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/comentarios" for 172.19.0.1 at 2017-06-11 03:31:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ComentariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QTdOQlI3zCflccuJyvfDaAEb8t2GI+D81WEqv0HNqYozOEw1ezXWfRZJ02J4T3FPVqGWPtPtrpY+bvMwy+rB6w==", "comentario"=>{"user_id"=>"4", "articulo_id"=>"9", "content"=>"LA RAJA"}, "commit"=>"Agregar comentario"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "comentarios" ("user_id", "articulo_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", "4"], ["articulo_id", "9"], ["content", "LA RAJA"], ["created_at", 2017-06-11 03:31:23 UTC], ["updated_at", 2017-06-11 03:31:23 UTC]]
+  [1m[35m (15.4ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from block (2 levels) in create at /myapp/app/controllers/comentarios_controller.rb:31)
+Redirected to http://localhost:3000/articulos/9
+Completed 302 Found in 30ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/articulos/9" for 172.19.0.1 at 2017-06-11 03:31:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  [1m[36mRatingCache Load (0.6ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 9], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "rates" WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = $2 AND "rates"."rateable_id" = $3 AND "rates"."rateable_type" = $4[0m  [["rater_id", 4], ["dimension", "rating"], ["rateable_id", 9], ["rateable_type", "Articulo"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mComentario Load (0.7ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered shared/_add_comentario.html.erb (1.5ms)
+  Rendered articulos/show.html.erb within layouts/application (111.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 608ms (Views: 582.1ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/comentarios" for 172.19.0.1 at 2017-06-11 03:31:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UPyUnzkXLgLhAdM8dSQk4xt601OvdWvOCET6QJ51kr025HNT9Q6o7OD9ITQERXyUnpUM/Qmps9Xj/8liI5Zgng==", "comentario"=>{"user_id"=>"4", "articulo_id"=>"9", "content"=>"CACA"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "comentarios" ("user_id", "articulo_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", "4"], ["articulo_id", "9"], ["content", "CACA"], ["created_at", 2017-06-11 03:31:33 UTC], ["updated_at", 2017-06-11 03:31:33 UTC]]
+  [1m[35m (18.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering comentarios/create.js.erb
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered comentarios/_comentario.html.erb (5.4ms)
+  Rendered comentarios/create.js.erb (26.4ms)
+Completed 200 OK in 133ms (Views: 75.4ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/articulos/9" for 172.19.0.1 at 2017-06-11 03:32:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 ORDER BY "articulos"."created_at" DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  [1m[36mRatingCache Load (0.5ms)[0m  [1m[34mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT $4[0m  [["cacheable_id", 9], ["cacheable_type", "Articulo"], ["dimension", "rating"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "rates" WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = $2 AND "rates"."rateable_id" = $3 AND "rates"."rateable_type" = $4[0m  [["rater_id", 4], ["dimension", "rating"], ["rateable_id", 9], ["rateable_type", "Articulo"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mComentario Load (0.4ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = $1[0m  [["articulo_id", "9"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered shared/_add_comentario.html.erb (4.5ms)
+  Rendered articulos/show.html.erb within layouts/application (104.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+Completed 200 OK in 665ms (Views: 636.4ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/comentarios" for 172.19.0.1 at 2017-06-11 03:32:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mCar1U97L12yXZ5mlKWBxIdejVjckQlp9XnH/6edIk3+PkwZg2Kps7OhbG7lxNmzArFS9npN0XIewvTdGn7Qbg==", "comentario"=>{"user_id"=>"4", "articulo_id"=>"9", "content"=>"CAA\""}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "comentarios" ("user_id", "articulo_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", "4"], ["articulo_id", "9"], ["content", "CAA\""], ["created_at", 2017-06-11 03:32:17 UTC], ["updated_at", 2017-06-11 03:32:17 UTC]]
+  [1m[35m (16.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering comentarios/create.js.erb
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered comentarios/_comentario.html.erb (5.2ms)
+  Rendered comentarios/create.js.erb (22.9ms)
+Completed 200 OK in 109ms (Views: 62.7ms | ActiveRecord: 18.2ms)
+
+

@@ -66,7 +66,7 @@
               <span class="name"><%=@usuario.name%></span>
               <% if logged_in?%>
               <%if current_user.id == comentario.user_id || current_user.admin?%>
-                <%= link_to comentario, method: :delete, data: { confirm: 'Estas seguro?' } do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %>
+                <%= link_to comentario, method: :delete, data: { confirm: 'Estas seguro?' }, :remote => true, :class=>"delete_comentario" do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %>
               <% end %>
               <% end %>
               <p class="review_text"><%=comentario.content%></p>

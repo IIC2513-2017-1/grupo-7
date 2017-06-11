@@ -62,7 +62,11 @@ class ArticulosController < ApplicationController
     destroy_comments
 
     if @articulo.destroy!
-      redirect_to root_path
+      respond_to do |format|
+        format.html { redirect_to :back }
+        format.json { head :no_content }
+        format.js   { render :layout => false }
+      end
     end
   end
 

@@ -21,11 +21,10 @@ ActiveRecord::Schema.define(version: 20170611021107) do
     t.integer  "stock"
     t.integer  "precio"
     t.text     "descripcion"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "categoria"
     t.string   "image"
-    t.float    "rating",      default: 0.0
   end
 
   create_table "average_caches", force: :cascade do |t|

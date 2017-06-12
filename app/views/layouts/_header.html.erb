@@ -4,7 +4,7 @@
         <%= link_to "SMARTBUY" , root_path, id: 'logo' %>
 
         <% if logged_in? %>
-          <li><%= link_to "Ver Carrito", carrito_path %></li>
+          <li> <a href="/carrito"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> Ver Carrito </a></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn"> Account </a>
             <div class="dropdown-content">
@@ -17,10 +17,11 @@
           <% end %>
         <div class="search-bar">
           <%= form_tag(articulos_path, :method => "get", id: "search-form") do %>
-          <%= text_field_tag :search, params[:search], placeholder: "Buscar articulo", :size=> 80 %>
+          <%= text_field_tag :search, params[:search], placeholder: "Buscar articulo", :size=> 75 %>
           <%= submit_tag "Buscar" %>
         </div>
         <% end %>
       </ul>
     </div>
   </div>
+

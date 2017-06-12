@@ -1,11 +1,11 @@
 development: &default
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: ejemplo1
   pool: 5
-  username: postgres
+  username: gdburky
   password:
-  host: db
+  host: localhost
 
 test:
   <<: *default

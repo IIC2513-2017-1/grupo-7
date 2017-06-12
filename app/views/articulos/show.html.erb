@@ -33,7 +33,7 @@
                     <%= f.label :cantidad%><%= f.number_field :cantidad , value: 1%>
                     </div>
                     <div class="cart">
-                    <%= f.submit 'Agregar al carro' %>
+                    <%= f.submit 'Agregar al carro'  %>
                     <%= f.hidden_field :articulo_id, value: @articulo.id %>
                     <%= f.hidden_field :user_id, value: current_user.id %>
                     <% end %>

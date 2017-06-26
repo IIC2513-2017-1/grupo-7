@@ -11,19 +11,19 @@
         </div>
         </div>
         <div class="product_info">
-          <h1><%= @articulo.name %></h1><br>
+          <h1><%= @articulo.name %></h1>
+          <p>En Stock: <%=@articulo.stock%></p>
           <div class="price">
-          <h2 class="sale_price">$<%= @articulo.precio %></h2><br><br>
+          <h2 class="sale_price">$<%= @articulo.precio %></h2>
           </div>
+          <br>
           <div class="rating">
-            <p>Calificacion: <%= rating_for @articulo, "rating"%></p>
+            <%= rating_for @articulo, "rating"%>
           </div>
           <div class="product_description">
-          <p> <%= @articulo.descripcion %> </p>
+          <p><%= @articulo.descripcion %> </p>
           </div>
-          <div class="related_info">
-           <span class="sku"> Publicado hace <%= time_ago_in_words(@articulo.created_at) %> </span>
-           </div>
+
          <div class="options">
           <div class="buying">
                    <% if logged_in?%>
@@ -33,9 +33,9 @@
                     <%= f.label :cantidad%><%= f.number_field :cantidad , value: 1%>
                     </div>
                     <div class="cart">
-                    <%= f.submit 'Agregar al carro'  %>
                     <%= f.hidden_field :articulo_id, value: @articulo.id %>
                     <%= f.hidden_field :user_id, value: current_user.id %>
+                    <%= f.submit 'Agregar al carro'  %>
                     <% end %>
                     </div>
                     <div class="cart">
@@ -66,7 +66,7 @@
               <span class="name"><%=@usuario.name%></span>
               <% if logged_in?%>
               <%if current_user.id == comentario.user_id || current_user.admin?%>
-                <%= link_to comentario, method: :delete, data: { confirm: 'Estas seguro?' }, :remote => true, :class=>"delete_comentario" do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %>
+                <%= link_to comentario, method: :delete, data: { confirm: 'Borrar comentario?' }, :remote => true, :class=>"delete_comentario" do %><i class="fa fa-trash fa-2x" aria-hidden="true"></i><% end %>
               <% end %>
               <% end %>
               <p class="review_text"><%=comentario.content%></p>

@@ -16,5 +16,6 @@ class StaticPagesController < ApplicationController
     @categoria = params[:categoria]
   end
 
-
+  def confirmar_compras
+  end
 end

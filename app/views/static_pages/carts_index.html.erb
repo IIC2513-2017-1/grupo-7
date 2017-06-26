@@ -8,6 +8,9 @@
     <h3 class="page-title">Items en el carrito</h3></div>
     <%@carts = Cart.where(user_id: current_user.id)%>
     <% if @carts.any?%>
+
+    <% @temp_id = HistorialCompra.distinct.count('compra_id') %>
+    <% @temp_id += 1 %>
       <% @total = 0%>
       <table class="table-fill">
         <thead>
@@ -16,27 +19,37 @@
           <th class="text-left">Cantidad</th>
           <th class="text-left">Precio</th>
           <th class="text-left"></th>
+          <th class="text-left"></th>
         </tr>
         </thead>
         <tbody class="table-hover">
         <% @carts.each do |cart| %>
           <% @articulo = Articulo.find(cart.articulo_id) %>
+          <% @compra = HistorialCompra.new %>
+          <%= form_for @compra do |c|%>
+            <%= c.hidden_field :compra_id, value: @temp_id %>
+            <%= c.hidden_field :usuario_id, value: current_user.id %>
+            <%= c.hidden_field :producto_id, value: cart.articulo_id %>
+            <%= c.hidden_field :cantidad, value: cart.cantidad %>
           <tr>
             <td class="text-center"><%=link_to @articulo.name, @articulo %></td>
             <td class="text-center"><%= cart.cantidad %></td>
             <td class="text-center"><%= cart.cantidad.to_i * @articulo.precio.to_i %></td>
-            <td class="text-center"><%= link_to 'Eliminar', cart, method: :delete, data: { confirm: 'Are you sure?'} %></td>
+            <td class="text-center"><%= link_to 'Eliminar', cart, method: :delete, data: { confirm: 'Estas seguro?'} %></td>
+            <td class="text-center"><%= c.submit "Comprar", :onclick => "return confirm('Comprar producto? La compra se realizara cuando el administrador confirme la recepcion del pago')"%></td>
           </tr>
+          <%end %>
             <%@total += cart.cantidad.to_i * @articulo.precio.to_i%>
         <% end %>
         </tbody>
       </table>
   <p> Total: <%= @total %></p>
+
+    </div>
   <%else %>
-  <p>No hay items en el carrito</p>
+    <p>No hay items en el carrito</p>
   <% end %>
   </div>
-  </div>
 <%else%>
-<%controller.redirect_to root_path%>
+  <%controller.redirect_to root_path%>
 <%end%>

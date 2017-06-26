@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :historial_compras
   post '/rate' => 'rater#create', :as => 'rate'
   get 'password_resets/new'
 
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   get '/create', to: 'articulos#new'
   get '/add_articulo', to: 'static_pages#add_articulo'
+  get '/confirmar_compras', to: 'static_pages#confirmar_compras'
   get '/tecnologia', to: 'static_pages#categoria', :categoria => 'tecnologia'
   get '/hombre', to: 'static_pages#categoria', :categoria => 'hombre'
   get '/mujer', to: 'static_pages#categoria', :categoria => 'mujer'
@@ -20,7 +22,7 @@ Rails.application.routes.draw do
   get '/deporte', to: 'static_pages#categoria', :categoria => 'deporte'
   get '/accesorios', to: 'static_pages#categoria', :categoria => 'accesorios'
   get '/outdoor', to: 'static_pages#categoria', :categoria => 'outdoor'
-  
+
   resources :carts
   resources :users
   resources :articulos

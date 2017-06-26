@@ -1,0 +1,42 @@
+<%if logged_in?%>
+  <%if current_user.admin?%>
+    <% provide(:title, "Confirmar| SmartBuy") %>
+    <%= render 'layouts/sidebar'%>
+    <div class="wrapper">
+    <%@compras = HistorialCompra.where(validated: false)%>
+    <table class="table-fill">
+      <thead>
+        <tr>
+        <th class="text-left">ID</th>
+        <th class="text-left">Usuario</th>
+        <th class="text-left">Producto</th>
+        <th class="text-left">Cantidad</th>
+        <th class="text-left">Total</th>
+        <th class="text-left"></th>
+        <th class="text-left"></th>
+      </tr>
+      </thead>
+      <tbody class="table-hover">
+        <% @compras.each do |historial_compra| %>
+          <% @articulo = Articulo.find(historial_compra.producto_id) %>
+          <% @usuario = User.find(historial_compra.usuario_id) %>
+          <tr>
+            <td class="text-center"><%=historial_compra.compra_id %></td>
+            <td class="text-center"><%=link_to @usuario.name, @usuario %></td>
+            <td class="text-center"><%=link_to @articulo.name, @articulo %></td>
+            <td class="text-center"><%= historial_compra.cantidad %></td>
+            <td class="text-center"><%= historial_compra.cantidad.to_i * @articulo.precio.to_i %></td>
+            <td class="text-center"><%= link_to 'Cancelar', historial_compra, method: :delete, data: { confirm: 'Are you sure?'} %></td>
+            <td class="text-center"><%= link_to "Confirmar Pago",historial_compra_path(historial_compra, historial_compra: {validated: true}), method: :put, data: {confirm: "Confirmar recepcion de pago?"}%></td>
+          </tr>
+
+        <%end%>
+      </tbody>
+    </table>
+    </div>
+    <%else%>
+      <%controller.redirect_to root_path%>
+    <%end%>
+<%else%>
+  <%controller.redirect_to root_path%>
+<%end%>

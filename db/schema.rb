@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170611021107) do
+ActiveRecord::Schema.define(version: 20170625224841) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,10 +21,11 @@ ActiveRecord::Schema.define(version: 20170611021107) do
     t.integer  "stock"
     t.integer  "precio"
     t.text     "descripcion"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.string   "categoria"
     t.string   "image"
+    t.float    "rating",      default: 0.0
   end
 
   create_table "average_caches", force: :cascade do |t|
@@ -52,6 +53,17 @@ ActiveRecord::Schema.define(version: 20170611021107) do
     t.text     "content"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "historial_compras", force: :cascade do |t|
+    t.integer  "compra_id"
+    t.integer  "producto_id"
+    t.integer  "usuario_id"
+    t.integer  "cantidad"
+    t.integer  "total"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.boolean  "validated",   default: false
   end
 
   create_table "overall_averages", force: :cascade do |t|

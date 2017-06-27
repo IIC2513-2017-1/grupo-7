@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+
+
   resources :historial_compras
   post '/rate' => 'rater#create', :as => 'rate'
   get 'password_resets/new'
-
+  get '/moneda', to: 'articulos#moneda'
   get 'password_resets/edit'
-
+  get '/graficos', to: 'users#graficos'
   root 'static_pages#home'
   get  '/about',   to: 'static_pages#about'
   get '/carrito', to: 'static_pages#carts_index'

@@ -18,7 +18,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
-
+gem 'rest-client'
 gem 'bcrypt',   '~> 3.1.11'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'

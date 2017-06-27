@@ -1,0 +1,15 @@
+<div>
+<%= form_tag(moneda_path, method: :get) do %>
+    <%= select_tag("moneda",
+        options_for_select([
+                                     ['Dólar Americano', 'USD'],
+                                     ['Dólar Canadiense', 'CAD'],
+                                     ['Franco Suizo', 'CHF'],
+                                     ['Euro', 'EUR'],
+                                     ['Yuan chino', 'CNH'],
+                                     ['Peso Chileno','CLP']
+                                     ])) %>
+    <%= hidden_field_tag 'ide', @articulo.id %>
+    <%= submit_tag 'Cambiar' , data: { disable_with: false }%>
+<% end %>
+</div>

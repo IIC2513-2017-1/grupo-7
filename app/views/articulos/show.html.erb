@@ -1,3 +1,5 @@
+<%@nombre = @articulo.name%>
+<% provide(:title, @nombre+" | SmartBuy") %>
 <%= render 'layouts/sidebar'%>
 
 
@@ -14,7 +16,19 @@
           <h1><%= @articulo.name %></h1>
           <p>En Stock: <%=@articulo.stock%></p>
           <div class="price">
-          <h2 class="sale_price">$<%= @articulo.precio %></h2>
+          <% if flash[:nueva_moneda]
+                    mon = flash[:nueva_moneda];
+                    por  = flash[:precio]
+                    pre = ''
+                else
+                    mon = ''
+                    pre = '$'
+                    por = 1
+           %>
+           <% end %>
+          <h2 class="sale_price"><%= pre%><%= (@articulo.precio*por).round(2) %> <%= mon%></h2><br><br>
+          <%= render 'layouts/monedas'%>
+
           </div>
           <br>
           <div class="rating">

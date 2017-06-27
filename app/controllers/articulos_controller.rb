@@ -70,6 +70,18 @@ class ArticulosController < ApplicationController
     end
   end
 
+  def moneda
+      nueva_moneda = params[:moneda]
+      @articulo = Articulo.find(params[:ide])
+      require 'rest-client'
+      require 'json'
+      url= 'http://free.currencyconverterapi.com/api/v3/convert?q=CLP_'+nueva_moneda+'&compact=ultra'
+      respuesta = RestClient.get url
+      response = JSON.parse(respuesta)
+      redirect_to :back, flash: {nueva_moneda: nueva_moneda, precio: response.values[0]}
+
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_articulo

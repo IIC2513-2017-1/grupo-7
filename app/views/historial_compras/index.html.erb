@@ -1,24 +1,28 @@
-<% provide(:title, "Carrito | SmartBuy") %>
+<% provide(:title, "Historial | SmartBuy") %>
 <%= render 'layouts/sidebar'%>
 <div class="wrapper">
   <%@historial = HistorialCompra.where(validated: true, usuario_id: current_user.id)%>
-  <table class="table-fill">
-    <thead>
+  <%if @historial.any?%>
+    <table class="table-fill">
+      <thead>
+        <tr>
+        <th class="text-left">Producto</th>
+        <th class="text-left">Cantidad</th>
+        <th class="text-left">Total</th>
+        <th class="text-left">Comprado en</th>
+      </tr>
+      </thead>
+    <%@historial.each do |h|%>
+    <% @articulo = Articulo.find(h.producto_id) %>
       <tr>
-      <th class="text-left">Producto</th>
-      <th class="text-left">Cantidad</th>
-      <th class="text-left">Total</th>
-      <th class="text-left">Comprado en</th>
-    </tr>
-    </thead>
-  <%@historial.each do |h|%>
-  <% @articulo = Articulo.find(h.producto_id) %>
-    <tr>
-      <td class="text-center"><%=@articulo.name%></td>
-      <td class="text-center"><%=h.cantidad%></td>
-      <td class="text-center"><%= h.cantidad.to_i * @articulo.precio.to_i %></td>
-      <td class="text-center"><%=h.updated_at%></td>
-    </tr>
+        <td class="text-center"><%=@articulo.name%></td>
+        <td class="text-center"><%=h.cantidad%></td>
+        <td class="text-center"><%= h.cantidad.to_i * @articulo.precio.to_i %></td>
+        <td class="text-center"><%=h.updated_at%></td>
+      </tr>
+    <%end%>
+  <%else%>
+    <h2>No hay articulos en el historial</h2>
   <%end%>
 </tbody>
 </table>
